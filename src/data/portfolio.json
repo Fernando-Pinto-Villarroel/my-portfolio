@@ -2,8 +2,8 @@
   "personal": {
     "name": "Fernando Pinto Villarroel",
     "title": "Software Engineer & Linguist",
-    "subtitle": "Crafting digital experiences across the universe of technology",
-    "bio": "Passionate Software Engineering student with expertise in full-stack development. I blend technical precision with linguistic understanding to create innovative solutions. Currently pursuing my degree while building scalable applications and exploring the intersection of technology and human communication.",
+    "subtitle": "Navigating the tech universe through hands-on projects and creative solutions.",
+    "bio": "Passionate Software Engineering student with experience in full-stack development. I bring together technical precision with linguistic understanding to create innovative solutions. Currently pursuing my degree while building scalable applications and exploring the intersection of technology and human communication.",
     "location": "Cochabamba, Bolivia",
     "email": "ferpintovillarroel1406@gmail.com",
     "gitlab": "https://gitlab.com/FernandoPinto1406",
@@ -21,365 +21,358 @@
       "id": "uno-game",
       "title": "UNO Game Platform",
       "description": "Real-time multiplayer UNO game featuring complex game logic, visual effects, and seamless player communication through advanced WebSocket implementation.",
-      "image": "/images/uno-game.jpg",
+      "image": "/images/uno-game/main.png",
       "technologies": ["React", "Express.js", "MySQL", "Socket.io", "Docker"],
       "category": ["Full-Stack"],
-      "gitlab": "https://gitlab.com/fernandopinto/uno-game",
-      "demo": "https://uno-game-platform.vercel.app",
+      "gitlab": "url",
+      "demo": "url",
       "team": false,
       "features": [
-        "Real-time multiplayer gameplay with synchronized game state",
-        "Advanced state management using functional programming patterns",
-        "WebSocket-based communication for instant player interactions",
-        "Complex game logic implementation with rule validation",
-        "Visual effects and animations for enhanced user experience"
+        "Real-time multiplayer gameplay with synchronized game state.",
+        "Advanced state management using functional programming patterns.",
+        "WebSocket-based communication for instant player interactions."
       ],
       "private": true,
       "deployed": false,
       "screenshots": [
-        "/images/uno-game/screenshot-1.png",
-        "/images/uno-game/screenshot-2.png",
-        "/images/uno-game/screenshot-3.png",
-        "/images/uno-game/screenshot-4.png",
-        "/images/uno-game/screenshot-5.png",
-        "/images/uno-game/screenshot-6.png"
+        "/images/uno-game/main.png",
+        "/images/uno-game/1.png",
+        "/images/uno-game/2.png",
+        "/images/uno-game/3.png",
+        "/images/uno-game/4.png",
+        "/images/uno-game/5.png",
+        "/images/uno-game/6.png",
+        "/images/uno-game/7.png",
+        "/images/uno-game/8.png",
+        "/images/uno-game/9.png"
       ]
     },
     {
       "id": "space-invaders",
       "title": "Space Invaders",
       "description": "A classic Space Invaders game developed in C# as part of Programming 3 coursework, implementing advanced OOP principles and two-way data binding for real-time user interactions.",
-      "image": "/images/space-invaders.jpg",
+      "image": "/images/space-invaders/main.png",
       "technologies": ["UNO Platform", "C#", ".NET 9"],
       "category": ["Desktop"],
-      "gitlab": "https://gitlab.com/fernandopinto/space-invaders",
-      "demo": "https://space-invaders-demo.vercel.app",
+      "gitlab": "https://gitlab.com/FernandoPinto1406/spaceinvaders",
+      "demo": "url",
       "team": false,
       "features": [
-        "Object-oriented programming with advanced design patterns",
-        "Implementation of Composite, Factory, and Strategy patterns",
-        "Interactive gameplay with comprehensive scoring system",
-        "Scoreboard displaying top 10 high scores",
+        "Object-oriented programming with advanced design patterns (e.g., Singleton, Factory, Strategy, Composite patterns)",
+        "Interactive gameplay with scoring system",
         "Two-way data binding for dynamic UI updates"
       ],
       "private": false,
       "deployed": false,
       "screenshots": [
-        "/images/space-invaders/screenshot-1.png",
-        "/images/space-invaders/screenshot-2.png",
-        "/images/space-invaders/screenshot-3.png",
-        "/images/space-invaders/screenshot-4.png"
+        "/images/space-invaders/main.png",
+        "/images/space-invaders/1.png",
+        "/images/space-invaders/2.png",
+        "/images/space-invaders/3.png",
+        "/images/space-invaders/4.png",
+        "/images/space-invaders/5.png"
       ]
     },
     {
       "id": "home-mapper",
       "title": "Home Mapper",
       "description": "Interactive web application for visualizing forest fires in Bolivia with real-time data processing, geospatial analysis, and NASA API integration for comprehensive wildfire monitoring.",
-      "image": "/images/home-mapper.jpg",
+      "image": "/images/home-mapper/main.png",
       "technologies": ["React", "Spring", "Docker", "GCP"],
       "category": ["Full-Stack"],
-      "gitlab": "https://gitlab.com/fernandopinto/home-mapper",
-      "demo": "https://home-mapper.vercel.app",
+      "gitlab": "url",
+      "demo": "url",
       "team": true,
       "features": [
-        "Real-time forest fire visualization with NASA API integration",
-        "Interactive geospatial mapping with advanced data processing",
-        "Responsive UI with reusable component architecture",
-        "Advanced state management for real-time data updates",
-        "Comprehensive wildfire monitoring and analysis tools"
+        "Real-time forest fire visualization with NASA API integration.",
+        "Interactive geospatial mapping with advanced data processing.",
+        "Advanced state management for real-time data updates."
       ],
       "private": true,
-      "deployed": true,
+      "deployed": false,
       "screenshots": [
-        "/images/home-mapper/screenshot-1.png",
-        "/images/home-mapper/screenshot-2.png",
-        "/images/home-mapper/screenshot-3.png",
-        "/images/home-mapper/screenshot-4.png",
-        "/images/home-mapper/screenshot-5.png",
-        "/images/home-mapper/screenshot-6.png"
+        "/images/home-mapper/main.png",
+        "/images/home-mapper/1.png"
       ]
     },
     {
       "id": "qatu-hatun",
       "title": "Qatu Hatun E-commerce",
-      "description": "Complete e-commerce platform featuring responsive design, comprehensive inventory management, and real-time chat integration using MQTT protocol for enhanced customer communication.",
-      "image": "/images/qatu-hatun.jpg",
+      "description": "Complete e-commerce platform featuring responsive design, inventory management, and real-time chat integration using MQTT protocol for enhanced customer communication.",
+      "image": "/images/qatu-hatun/main.jpeg",
       "technologies": [
         "Vanilla JavaScript",
         "ASP.NET Core",
         "MongoDB",
         "Mosquitto",
+        "Firebase",
         "Docker"
       ],
       "category": ["Full-Stack"],
-      "gitlab": "https://gitlab.com/fernandopinto/qatu-hatun",
-      "demo": "https://qatu-hatun.vercel.app",
+      "gitlab": "url",
+      "demo": "url",
       "team": true,
       "features": [
-        "Responsive single-page application built with Webpack",
-        "Real-time chat system using MQTT (Mosquitto) protocol",
-        "RESTful API architecture for seamless data management",
-        "Comprehensive product and inventory management system",
-        "Secure payment integration with modern encryption"
+        "Responsive single-page application built with Webpack.",
+        "Real-time chat system using MQTT (Mosquitto) protocol.",
+        "RESTful API architecture for seamless data management."
       ],
       "private": true,
       "deployed": false,
       "screenshots": [
-        "/images/qatu-hatun/screenshot-1.png",
-        "/images/qatu-hatun/screenshot-2.png",
-        "/images/qatu-hatun/screenshot-3.png",
-        "/images/qatu-hatun/screenshot-4.png",
-        "/images/qatu-hatun/screenshot-5.png",
-        "/images/qatu-hatun/screenshot-6.png"
+        "/images/qatu-hatun/main.jpeg",
+        "/images/qatu-hatun/1.png",
+        "/images/qatu-hatun/2.png",
+        "/images/qatu-hatun/3.jpeg",
+        "/images/qatu-hatun/4.png",
+        "/images/qatu-hatun/5.png"
       ]
     },
     {
       "id": "booking-system",
       "title": "Booking Management System",
       "description": "Enterprise-level booking system with advanced reservation management, reactive forms, comprehensive validations, and role-based access control for scalable business operations.",
-      "image": "/images/booking-system.jpg",
-      "technologies": ["Angular", "Express.js", "TypeScript", "PostgreSQL"],
+      "image": "/images/booking-system/main.png",
+      "technologies": [
+        "Angular",
+        "Express.js (TS)",
+        "MongoDB",
+        "Keycloak",
+        "Docker",
+        "GCP"
+      ],
       "category": ["Full-Stack"],
-      "status": "Private – Not Deployed",
-      "gitlab": "https://gitlab.com/fernandopinto/booking-system",
-      "demo": "https://booking-system-demo.vercel.app",
+      "gitlab": "url",
+      "demo": "url",
       "team": true,
       "features": [
-        "Advanced reservation management with conflict resolution",
-        "Reactive forms with comprehensive input validations",
-        "Role-based access control with multiple permission levels",
-        "Real-time availability updates and booking notifications",
-        "Enterprise-grade security and data protection measures"
+        "Reactive forms with comprehensive input validations.",
+        "Role-based access control with multiple permission levels.",
+        "Enterprise-grade security and data protection measures."
       ],
       "private": true,
       "deployed": false,
       "screenshots": [
-        "/images/booking-system/screenshot-1.png",
-        "/images/booking-system/screenshot-2.png",
-        "/images/booking-system/screenshot-3.png",
-        "/images/booking-system/screenshot-4.png",
-        "/images/booking-system/screenshot-5.png",
-        "/images/booking-system/screenshot-6.png"
+        "/images/booking-system/main.png",
+        "/images/booking-system/1.png",
+        "/images/booking-system/2.png",
+        "/images/booking-system/3.png",
+        "/images/booking-system/4.png",
+        "/images/booking-system/5.png",
+        "/images/booking-system/6.png",
+        "/images/booking-system/7.png",
+        "/images/booking-system/8.png"
       ]
     },
     {
       "id": "say2you",
       "title": "Say2You",
       "description": "Real-time chat application CLI developed with C#, featuring comprehensive messaging capabilities, contact management, and group channels through MQTT protocol implementation.",
-      "image": "/images/say2you.jpg",
+      "image": "/images/say2you/main.png",
       "technologies": ["C#", "Mosquitto", "PostgreSQL", "Docker"],
-      "category": ["Full-Stack", "CLI"],
-      "status": "Public – Not Deployed",
+      "category": ["CLI"],
       "gitlab": "https://gitlab.com/say2you/say2you-client",
-      "demo": "https://say2you-demo.vercel.app",
+      "demo": "url",
       "team": false,
       "features": [
-        "Advanced messaging system with MQTT real-time communication",
-        "Comprehensive CLI interface with advanced command configurations",
-        "Contact management system with registration and deletion capabilities",
-        "Group channel creation and management functionality",
-        "Secure message encryption and user authentication"
+        "Advanced messaging system with MQTT real-time communication.",
+        "Contact and Group management system with registration and deletion capabilities.",
+        "Secure message encryption and user authentication."
       ],
       "private": false,
       "deployed": false,
       "screenshots": [
-        "/images/say2you/screenshot-1.png",
-        "/images/say2you/screenshot-2.png",
-        "/images/say2you/screenshot-3.png",
-        "/images/say2you/screenshot-4.png"
+        "/images/say2you/1.png",
+        "/images/say2you/2.png",
+        "/images/say2you/3.png",
+        "/images/say2you/4.png"
       ]
     },
     {
       "id": "tongue-pathology",
       "title": "Tongue Pathology Detector",
       "description": "AI-powered medical application for real-time tongue pathology detection using advanced machine learning models and comprehensive image processing algorithms.",
-      "image": "/images/tongue-detector.jpg",
-      "technologies": ["Vanilla JavaScript", "Python", "TensorFlow", "Docker"],
-      "category": ["AI/ML", "Full-Stack", "Healthcare"],
-      "status": "Private – Deployed",
-      "gitlab": "https://gitlab.com/fernandopinto/tongue-pathology",
-      "demo": "https://tongue-detector.vercel.app",
+      "image": "/images/tongue-pathology/main.png",
+      "technologies": [
+        "Vanilla JavaScript",
+        "Python",
+        "TensorFlow",
+        "Docker",
+        "GCP"
+      ],
+      "category": ["AI/ML", "Full-Stack"],
+      "gitlab": "url",
+      "demo": "url",
       "team": false,
       "features": [
         "Real-time ML model integration with TensorFlow",
-        "Advanced medical data visualization and analysis",
-        "Comprehensive image processing with pattern recognition",
-        "Clinical workflow optimization for healthcare professionals",
-        "Accurate pathology detection with confidence scoring"
+        "Advanced medical data analysis",
+        "Accurate pathology detection"
       ],
       "private": true,
-      "deployed": true,
+      "deployed": false,
       "screenshots": [
-        "/images/tongue-pathology/screenshot-1.png",
-        "/images/tongue-pathology/screenshot-2.png",
-        "/images/tongue-pathology/screenshot-3.png",
-        "/images/tongue-pathology/screenshot-4.png",
-        "/images/tongue-pathology/screenshot-5.png",
-        "/images/tongue-pathology/screenshot-6.png"
+        "/images/tongue-pathology/1.png",
+        "/images/tongue-pathology/main.png",
+        "/images/tongue-pathology/2.png",
+        "/images/tongue-pathology/3.png"
       ]
     },
     {
       "id": "navigaite",
       "title": "NavigAIte Browser",
       "description": "Semantic machine learning browser with intelligent content discovery, AI-powered search capabilities, and advanced natural language processing for enhanced web navigation.",
-      "image": "/images/navigaite.jpg",
-      "technologies": ["React", "Django", "ChromaDB", "Docker"],
-      "category": ["AI/ML", "Full-Stack"],
-      "status": "Private – Not Deployed",
-      "gitlab": "https://gitlab.com/fernandopinto/navigaite",
-      "demo": "https://navigaite.vercel.app",
+      "image": "/images/navigaite/main.png",
+      "technologies": [
+        "React",
+        "Typer",
+        "Django",
+        "ChromaDB",
+        "Redis",
+        "Docker"
+      ],
+      "category": ["AI/ML", "Full-Stack", "CLI"],
+      "gitlab": "url",
+      "demo": "url",
       "team": false,
       "features": [
-        "Intelligent semantic search with natural language processing",
-        "AI-driven content discovery and recommendation engine",
-        "Custom component-based architecture for scalability",
-        "Advanced API integration with vector database support",
-        "Machine learning-enhanced browsing experience"
+        "Intelligent semantic search with natural language processing.",
+        "AI-driven content discovery and recommendation engine.",
+        "Advanced API integration with vector database support.",
+        "Machine learning-enhanced browsing experience."
       ],
-      "private": false,
-      "deployed": true,
+      "private": true,
+      "deployed": false,
       "screenshots": [
-        "/images/navigaite/screenshot-1.png",
-        "/images/navigaite/screenshot-2.png",
-        "/images/navigaite/screenshot-3.png",
-        "/images/navigaite/screenshot-4.png",
-        "/images/navigaite/screenshot-5.png",
-        "/images/navigaite/screenshot-6.png"
+        "/images/navigaite/main.png",
+        "/images/navigaite/1.png",
+        "/images/navigaite/2.png",
+        "/images/navigaite/3.png",
+        "/images/navigaite/4.png",
+        "/images/navigaite/5.png",
+        "/images/navigaite/6.png",
+        "/images/navigaite/7.png"
       ]
     },
     {
       "id": "crowdsourced-ideation",
       "title": "Crowdsourced Ideation Solution API",
       "description": "Multi-language API system developed in Java and C# for comprehensive user management and content publishing, featuring advanced database migration strategies from SQL to NoSQL.",
-      "image": "/images/crowdsourced-ideation.jpg",
+      "image": "/images/crowdsourced-ideation/main.png",
       "technologies": ["Spring", "ASP.NET Core", "MySQL", "MongoDB"],
       "category": ["Backend"],
-      "status": "Public – Not Deployed",
-      "gitlab": "https://gitlab.com/fernandopinto/crowdsourced-ideation",
-      "demo": "https://crowdsourced-ideation-demo.vercel.app",
+      "gitlab": "url",
+      "demo": "url",
       "team": true,
       "features": [
-        "Multi-language API architecture with Java and C# implementation",
-        "Advanced database migration using ELT and ETL strategies",
-        "Comprehensive content management with categories and engagement features",
-        "Enterprise-level security configurations with Spring Security",
-        "Scalable user management and authentication system"
+        "Multi-language API architecture with Java and C# implementation.",
+        "Advanced database migration using ELT and ETL strategies.",
+        "Spring Security advanced configurations."
       ],
-      "private": false,
+      "private": true,
       "deployed": false,
       "screenshots": [
-        "/images/crowdsourced-ideation/screenshot-1.png",
-        "/images/crowdsourced-ideation/screenshot-2.png",
-        "/images/crowdsourced-ideation/screenshot-3.png",
-        "/images/crowdsourced-ideation/screenshot-4.png"
+        "/images/crowdsourced-ideation/main.png",
+        "/images/crowdsourced-ideation/1.png"
       ]
     },
     {
       "id": "snacks-api",
       "title": "Snacks API",
       "description": "Comprehensive API solution for institutional snack management using QR code integration, designed to handle registered user validation and prevent duplicate claims during events.",
-      "image": "/images/snacks-api.jpg",
+      "image": "/images/snacks-api/main.png",
       "technologies": ["Express.js", "MySQL", "Docker", "GCP"],
       "category": ["Backend"],
-      "status": "Public – Not Deployed",
       "gitlab": "https://gitlab.com/FernandoPinto1406/snacks-api",
-      "demo": "https://snacks-api-demo.vercel.app",
+      "demo": "url",
       "team": false,
       "features": [
-        "QR code integration for secure snack distribution validation",
-        "Advanced user registration and period-based claim management",
-        "Comprehensive validation system to prevent duplicate distributions",
-        "Event management capabilities for multi-day institutional fairs",
-        "Real-time tracking and reporting of snack distribution analytics"
+        "QR code integration for secure snack distribution validation.",
+        "Advanced user registration and period-based claim management.",
+        "Validation system to prevent duplicate distributions.",
+        "Event management capabilities for multi-day institutional fairs."
       ],
       "private": false,
       "deployed": false,
-      "screenshots": [
-        "/images/snacks-api/screenshot-1.png",
-        "/images/snacks-api/screenshot-2.png",
-        "/images/snacks-api/screenshot-3.png",
-        "/images/snacks-api/screenshot-4.png"
-      ]
+      "screenshots": ["/images/snacks-api/main.png"]
     },
     {
       "id": "spotify-api-testing",
       "title": "Spotify API Testing Automation Framework",
       "description": "Comprehensive testing automation framework developed with Cucumber.js for systematic validation of Spotify's official API endpoints and functionality.",
-      "image": "/images/spotify-testing.jpg",
-      "technologies": ["Cucumber.js", "JavaScript", "API Testing"],
+      "image": "/images/spotify-api-testing/main.png",
+      "technologies": ["Cucumber.js", "JavaScript", "Postman"],
       "category": ["QA", "Testing"],
-      "status": "Public – Not Deployed",
       "gitlab": "https://gitlab.com/FernandoPinto1406/spotify-api-testing",
-      "demo": "https://spotify-testing-demo.vercel.app",
+      "demo": "url",
       "team": true,
       "features": [
-        "Behavior-driven development with Cucumber.js framework",
-        "Comprehensive API endpoint testing and validation",
-        "Automated test suite for Spotify's official API functionality",
-        "Advanced reporting and test result analysis",
-        "Continuous integration support for automated testing workflows"
+        "Behavior-driven development with Cucumber.js framework.",
+        "Comprehensive API endpoint testing and validation.",
+        "Automated test suite for Spotify's official API functionality.",
+        "Advanced reporting and test result analysis.",
+        "Continuous integration support for automated testing workflows."
       ],
       "private": false,
       "deployed": false,
       "screenshots": [
-        "/images/spotify-testing/screenshot-1.png",
-        "/images/spotify-testing/screenshot-2.png",
-        "/images/spotify-testing/screenshot-3.png",
-        "/images/spotify-testing/screenshot-4.png"
+        "/images/spotify-api-testing/main.png",
+        "/images/spotify-api-testing/1.png",
+        "/images/spotify-api-testing/2.png",
+        "/images/spotify-api-testing/3.png",
+        "/images/spotify-api-testing/4.png"
       ]
     },
     {
       "id": "sorting-algorithm-visualizer",
       "title": "Sorting Algorithm Visualizer",
       "description": "Desktop application for real-time visualization of sorting algorithms, developed with Java Swing and implementing advanced object-oriented programming principles and design patterns.",
-      "image": "/images/sorting-visualizer.jpg",
+      "image": "/images/sorting-algorithm-visualizer/main.png",
       "technologies": ["Java Swing", "Java"],
-      "category": ["Desktop", "Educational"],
-      "status": "Public – Not Deployed",
+      "category": ["Desktop", "CLI"],
       "gitlab": "https://gitlab.com/FernandoPinto1406/sav",
       "demo": "https://sorting-visualizer-demo.vercel.app",
       "team": false,
       "features": [
-        "Real-time visualization of multiple sorting algorithm processes",
-        "Implementation of advanced design patterns (Strategy, Singleton, Factory)",
-        "Extensible architecture for easy addition of new sorting algorithms",
-        "Interactive user interface with customizable visualization parameters",
-        "Educational tool with step-by-step algorithm execution display"
+        "Real-time visualization of multiple sorting algorithm processes.",
+        "Implementation of advanced design patterns (Strategy, Singleton, Factory).",
+        "Extensible architecture for easy addition of new sorting algorithms.",
+        "Interactive user interface with customizable visualization parameters.",
+        "Educational tool with step-by-step algorithm execution display."
       ],
       "private": false,
       "deployed": false,
       "screenshots": [
-        "/images/sorting-visualizer/screenshot-1.png",
-        "/images/sorting-visualizer/screenshot-2.png",
-        "/images/sorting-visualizer/screenshot-3.png",
-        "/images/sorting-visualizer/screenshot-4.png"
+        "/images/sorting-algorithm-visualizer/1.png",
+        "/images/sorting-algorithm-visualizer/main.png",
+        "/images/sorting-algorithm-visualizer/2.png"
       ]
     },
     {
       "id": "game2d",
       "title": "Game2D",
-      "description": "2D adventure game developed with Java and Java Swing, following comprehensive tutorials to master game development fundamentals including sprites, music integration, and map design.",
-      "image": "/images/game2d.jpg",
+      "description": "2D adventure game developed with Java and Java Swing, following the YouTube series tutorials from @RyiSnow (https://youtu.be/om59cwR7psI?si=2L8029wQ4tPiGi_p) to learn game development fundamentals including sprites, music integration, and map design.",
+      "image": "/images/game2d/main.png",
       "technologies": ["Java Swing", "Java"],
-      "category": ["Desktop", "Game Development"],
-      "status": "Public – Not Deployed",
+      "category": ["Desktop"],
       "gitlab": "https://gitlab.com/FernandoPinto1406/game2d",
-      "demo": "https://game2d-demo.vercel.app",
+      "demo": "url",
       "team": false,
       "features": [
-        "Complete 2D game implementation with Java Swing framework",
-        "Advanced sprite management and animation system",
-        "Integrated music and sound effects for immersive gameplay",
-        "Custom map design and level progression mechanics",
-        "Educational project demonstrating game development fundamentals"
+        "Complete 2D game implementation with Java Swing framework.",
+        "Custom map design and level progression mechanics.",
+        "Educational project demonstrating game development fundamentals."
       ],
       "private": false,
       "deployed": false,
       "screenshots": [
-        "/images/game2d/screenshot-1.png",
-        "/images/game2d/screenshot-2.png",
-        "/images/game2d/screenshot-3.png",
-        "/images/game2d/screenshot-4.png"
+        "/images/game2d/main.png",
+        "/images/game2d/1.png",
+        "/images/game2d/2.png",
+        "/images/game2d/3.png",
+        "/images/game2d/4.png",
+        "/images/game2d/5.png",
+        "/images/game2d/6.png"
       ]
     }
   ],
@@ -388,130 +381,130 @@
       {
         "name": "Java",
         "level": 8,
-        "description": "Enterprise applications, Spring ecosystem, and scalable backend systems"
+        "description": "Enterprise applications, Spring ecosystem, and scalable backend systems."
       },
       {
         "name": "C#",
         "level": 7,
-        "description": "Full-stack development with ASP.NET Core and Entity Framework"
+        "description": "Full-stack development with ASP.NET Core and Entity Framework."
       },
       {
         "name": "JavaScript",
         "level": 7,
-        "description": "Modern ES6+ features, async programming, and full-stack development"
+        "description": "Modern ES6+ features, async programming, and full-stack development."
       },
       {
         "name": "TypeScript",
         "level": 6,
-        "description": "Type-safe development with advanced patterns and configurations"
+        "description": "Type-safe development with advanced patterns and configurations."
       },
       {
         "name": "Python",
         "level": 6,
-        "description": "Data science, machine learning, and backend development with Django"
+        "description": "Data science, machine learning, deep learning, and backend development with Django."
       },
       {
         "name": "C++",
         "level": 4,
-        "description": "System programming and performance-critical applications"
+        "description": "System-level programming in IoT projects, focusing on efficient code for microcontrollers and sensor control."
       }
     ],
     "frontend": [
       {
         "name": "React",
         "level": 7,
-        "description": "Advanced component architecture, state management, and performance optimization"
+        "description": "Advanced component architecture, state management, and performance optimization."
       },
       {
         "name": "Angular",
         "level": 8,
-        "description": "Enterprise applications with reactive forms, services, and complex routing"
+        "description": "Enterprise applications with reactive forms, services, and complex routing."
       },
       {
         "name": "Vanilla JS, HTML, CSS",
         "level": 7,
-        "description": "Responsive design, modern CSS features, and cross-browser compatibility"
+        "description": "Responsive design, modern CSS features, and cross-browser compatibility."
       },
       {
         "name": "Vue.js",
         "level": 1,
-        "description": "Lightweight applications with component-based architecture"
+        "description": "Lightweight applications with component-based architecture."
       }
     ],
     "backend": [
       {
         "name": "Express.js",
         "level": 9,
-        "description": "RESTful APIs, real-time communication, and middleware development"
+        "description": "RESTful APIs, real-time communication, and middleware development."
       },
       {
         "name": ".NET",
         "level": 8,
-        "description": "Enterprise applications with advanced authentication and security"
+        "description": "Enterprise applications with advanced authentication and security."
       },
       {
         "name": "Spring",
         "level": 7,
-        "description": "Microservices architecture, security, and database integration"
+        "description": "Microservices architecture, security, and database integration."
       },
       {
         "name": "Django",
         "level": 5,
-        "description": "Rapid web development with ORM and admin interface"
+        "description": "Rapid web development with ORM and admin interface."
       }
     ],
     "databases": [
       {
         "name": "MongoDB",
         "level": 9,
-        "description": "Document-based applications and aggregation pipelines"
+        "description": "Document-based applications and aggregation pipelines."
       },
       {
         "name": "SQL Server",
         "level": 8,
-        "description": "Enterprise database solutions and stored procedures"
+        "description": "Enterprise database solutions and stored procedures."
       },
       {
         "name": "MySQL",
         "level": 8,
-        "description": "Relational database design and query optimization"
+        "description": "Relational database design and query optimization."
       },
       {
         "name": "PostgreSQL",
         "level": 7,
-        "description": "Complex queries, performance tuning, and database design"
+        "description": "Complex queries, performance tuning, and database design."
       },
       {
         "name": "Redis",
         "level": 6,
-        "description": "Caching strategies and session management"
+        "description": "Caching strategies and session management."
       },
       {
         "name": "ChromaDB",
         "level": 5,
-        "description": "Vector databases for AI applications"
+        "description": "Vector databases for AI applications."
       }
     ],
     "devops": [
       {
         "name": "Docker",
         "level": 10,
-        "description": "Containerization, multi-container architectures, and custom images"
+        "description": "Containerization, multi-container architectures, and custom images."
       },
       {
         "name": "CI/CD",
         "level": 10,
-        "description": "GitLab CI/CD, automated testing, and multi-environment deployments"
+        "description": "GitLab CI/CD, automated testing, and multi-environment deployments."
       },
       {
         "name": "Git",
         "level": 10,
-        "description": "Advanced workflows, conflict resolution, and collaborative development"
+        "description": "Advanced workflows, conflict resolution, and collaborative development."
       },
       {
         "name": "GCP",
         "level": 8,
-        "description": "Cloud deployments and infrastructure management"
+        "description": "Cloud deployments and infrastructure management."
       }
     ]
   }

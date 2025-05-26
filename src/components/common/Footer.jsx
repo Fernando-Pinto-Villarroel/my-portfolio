@@ -1,4 +1,4 @@
-import { Mail, Github, Linkedin } from 'lucide-react';
+import { Mail, Github, Linkedin } from "lucide-react";
 
 const Footer = ({ personal }) => {
   return (
@@ -28,9 +28,7 @@ const Footer = ({ personal }) => {
             <Linkedin className="w-6 h-6 text-blue-400" />
           </a>
         </div>
-        <p className="text-gray-400">
-          ©2025 - {personal.name}
-        </p>
+        <p className="text-gray-400">©2025 - {personal.name}</p>
       </div>
     </footer>
   );

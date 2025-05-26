@@ -1,8 +1,21 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { createPortal } from "react-dom";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
 
 const ProjectModal = ({ project, isOpen, onClose, type }) => {
   const [selectedImage, setSelectedImage] = useState(0);
+
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+
+    return () => {
+      document.body.style.overflow = "unset";
+    };
+  }, [isOpen]);
 
   if (!isOpen) return null;
 
@@ -55,9 +68,9 @@ const ProjectModal = ({ project, isOpen, onClose, type }) => {
 
   const modalContent = getModalContent();
 
-  return (
+  const modalElement = (
     <div
-      className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4"
+      className="fixed inset-0 bg-black/80 backdrop-blur-sm z-[9999] flex items-center justify-center p-4"
       onClick={handleBackdropClick}
     >
       <div className="relative bg-gray-800/95 backdrop-blur-sm border border-gray-700/50 rounded-2xl max-w-6xl w-full max-h-[90vh] overflow-hidden">
@@ -122,7 +135,9 @@ const ProjectModal = ({ project, isOpen, onClose, type }) => {
             <div className="relative bg-gradient-to-br from-gray-700/20 to-gray-800/30 border border-gray-600/30 rounded-xl overflow-hidden">
               <div className="relative aspect-video">
                 <img
-                  src={project.screenshots[selectedImage]}
+                  src={`${import.meta.env.BASE_URL}${
+                    project.screenshots[selectedImage]
+                  }`}
                   alt={`${project.title} screenshot ${selectedImage + 1}`}
                   className="w-full h-full object-cover"
                   onError={(e) => {
@@ -169,7 +184,7 @@ const ProjectModal = ({ project, isOpen, onClose, type }) => {
                     }`}
                   >
                     <img
-                      src={screenshot}
+                      src={`${import.meta.env.BASE_URL}${screenshot}`}
                       alt={`${project.title} thumbnail ${index + 1}`}
                       className="w-full h-full object-cover"
                       onError={(e) => {
@@ -186,6 +201,8 @@ const ProjectModal = ({ project, isOpen, onClose, type }) => {
       </div>
     </div>
   );
+
+  return createPortal(modalElement, document.body);
 };
 
 export default ProjectModal;
