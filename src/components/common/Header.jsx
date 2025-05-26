@@ -7,7 +7,7 @@ const Header = ({ personal }) => {
       <div className="absolute inset-0 bg-gradient-to-br from-blue-900/20 via-purple-900/20 to-pink-900/20" />
       <div className="container mx-auto px-6 text-center relative z-10">
         <div className="mb-8">
-          <Rocket className="w-16 h-16 text-blue-400 mx-auto mb-6 animate-pulse" />
+          <Rocket className="w-16 h-16 text-purple-700 mx-auto mb-6 animate-pulse" />
           <h1 className="text-6xl md:text-8xl font-bold mb-4">
             <GradientText>{personal.name}</GradientText>
           </h1>
