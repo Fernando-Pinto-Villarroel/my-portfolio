@@ -12,7 +12,7 @@ const Footer = ({ personal }) => {
             <Mail className="w-6 h-6 text-blue-400" />
           </a>
           <a
-            href={personal.github}
+            href={personal.gitlab}
             target="_blank"
             rel="noopener noreferrer"
             className="p-3 bg-gray-700/50 hover:bg-blue-600/50 rounded-full transition-all duration-300 hover:scale-110"

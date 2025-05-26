@@ -1,11 +1,11 @@
-import { Rocket, User } from "lucide-react";
+import { Guitar } from "lucide-react";
 import SectionTitle from "../common/SectionTitle";
 
 const AboutSection = ({ personal }) => {
   return (
     <section className="py-20 px-6">
       <div className="container mx-auto max-w-6xl">
-        <SectionTitle icon={Rocket}>About Me</SectionTitle>
+        <SectionTitle icon={Guitar}>About Me</SectionTitle>
         <div className="bg-gray-800/30 backdrop-blur-sm border border-gray-700/50 rounded-2xl p-8">
           <div className="flex flex-col lg:flex-row gap-8 items-start">
             <div className="flex-shrink-0">
