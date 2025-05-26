@@ -1,5 +1,5 @@
-import { Mail, Github, Linkedin, MapPin, Sparkles } from 'lucide-react';
-import GradientText from './GradientText';
+import { Mail, Github, Linkedin, MapPin, Rocket } from "lucide-react";
+import GradientText from "./GradientText";
 
 const Header = ({ personal }) => {
   return (
@@ -7,12 +7,16 @@ const Header = ({ personal }) => {
       <div className="absolute inset-0 bg-gradient-to-br from-blue-900/20 via-purple-900/20 to-pink-900/20" />
       <div className="container mx-auto px-6 text-center relative z-10">
         <div className="mb-8">
-          <Sparkles className="w-16 h-16 text-blue-400 mx-auto mb-6 animate-pulse" />
+          <Rocket className="w-16 h-16 text-blue-400 mx-auto mb-6 animate-pulse" />
           <h1 className="text-6xl md:text-8xl font-bold mb-4">
             <GradientText>{personal.name}</GradientText>
           </h1>
-          <p className="text-2xl md:text-3xl text-gray-300 mb-2">{personal.title}</p>
-          <p className="text-lg text-gray-400 max-w-2xl mx-auto mb-8">{personal.subtitle}</p>
+          <p className="text-2xl md:text-3xl text-gray-300 mb-2">
+            {personal.title}
+          </p>
+          <p className="text-lg text-gray-400 max-w-2xl mx-auto mb-8">
+            {personal.subtitle}
+          </p>
         </div>
 
         <div className="flex justify-center gap-6 mb-12">
