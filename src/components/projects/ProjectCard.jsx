@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Github, Star, ExternalLink, Code, Users } from "lucide-react";
+import { Github, Star, ExternalLink } from "lucide-react";
 import ProjectModal from "./ProjectModal";
 
 const ProjectCard = ({ project }) => {
@@ -69,26 +69,26 @@ const ProjectCard = ({ project }) => {
           <h3 className="text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">
             {project.title}
           </h3>
-          <p className="text-gray-300 mb-4 leading-relaxed line-clamp-3 flex-shrink-0">
+          <p className="text-gray-300 mb-4 leading-relaxed line-clamp-3 flex-shrink-0 min-h-[72px] max-h-[72px] overflow-hidden">
             {project.description}
           </p>
 
-          <div className="flex flex-wrap gap-2 mb-4 flex-shrink-0">
+          <div className="flex flex-wrap gap-2 mb-4 flex-shrink-0 min-h-[60px] max-h-[60px] overflow-hidden">
             {project.technologies.map((tech, index) => (
               <span
                 key={index}
-                className="px-3 py-1 bg-gray-700/50 text-gray-300 text-xs rounded-full border border-gray-600/50"
+                className="px-3 py-1 bg-gray-700/50 text-gray-300 text-xs rounded-full border border-gray-600/50 h-fit"
               >
                 {tech}
               </span>
             ))}
           </div>
 
-          <div className="space-y-2 mb-6 flex-1">
+          <div className="space-y-2 mb-6 flex-1 min-h-[72px] max-h-[72px] overflow-hidden">
             {project.features.slice(0, 3).map((feature, index) => (
               <div key={index} className="flex items-start gap-2">
                 <Star className="w-3 h-3 text-yellow-400 mt-1 flex-shrink-0" />
-                <span className="text-gray-400 text-sm line-clamp-2">
+                <span className="text-gray-400 text-sm line-clamp-1">
                   {feature}
                 </span>
               </div>
