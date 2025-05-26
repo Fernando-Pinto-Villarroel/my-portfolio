@@ -1,5 +1,5 @@
-import { Rocket, User } from 'lucide-react';
-import SectionTitle from '../common/SectionTitle';
+import { Rocket, User } from "lucide-react";
+import SectionTitle from "../common/SectionTitle";
 
 const AboutSection = ({ personal }) => {
   return (
@@ -11,19 +11,23 @@ const AboutSection = ({ personal }) => {
             <div className="flex-shrink-0">
               <div className="w-48 h-48 bg-gradient-to-br from-blue-500/20 to-purple-600/20 border-2 border-gray-600/50 rounded-2xl flex items-center justify-center hover:border-blue-500/50 transition-all duration-300">
                 <div className="text-center">
-                    <img
-                      src={personal.photo}
-                      alt="Foto de perfil"
-                      className="w-40 h-40 object-cover"
-                    />
+                  <img
+                    src={`${import.meta.env.BASE_URL}${personal.photo}`}
+                    alt="Foto de perfil"
+                    className="w-40 h-40 object-cover"
+                  />
                 </div>
               </div>
             </div>
-            
+
             <div className="flex-1">
-              <p className="text-lg text-gray-300 leading-relaxed mb-6">{personal.bio}</p>
+              <p className="text-lg text-gray-300 leading-relaxed mb-6">
+                {personal.bio}
+              </p>
               <div>
-                <h3 className="text-xl font-semibold text-white mb-4">Languages</h3>
+                <h3 className="text-xl font-semibold text-white mb-4">
+                  Languages
+                </h3>
                 <div className="flex flex-wrap gap-3">
                   {personal.languages.map((lang, index) => (
                     <span
