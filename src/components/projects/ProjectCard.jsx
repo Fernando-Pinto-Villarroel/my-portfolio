@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Github, Star, ExternalLink } from "lucide-react";
+import { Github, Star, ExternalLink, FileText } from "lucide-react";
 import ProjectModal from "./ProjectModal";
 
 const ProjectCard = ({ project }) => {
@@ -23,6 +23,16 @@ const ProjectCard = ({ project }) => {
       setIsModalOpen(true);
     } else {
       window.open(project.gitlab, "_blank");
+    }
+  };
+
+  const handleDocsClick = (e) => {
+    e.preventDefault();
+    if (project.docs === "url") {
+      setModalType("docs");
+      setIsModalOpen(true);
+    } else {
+      window.open(project.docs, "_blank");
     }
   };
 
@@ -88,24 +98,31 @@ const ProjectCard = ({ project }) => {
             {project.features.slice(0, 3).map((feature, index) => (
               <div key={index} className="flex items-start gap-2">
                 <Star className="w-3 h-3 text-yellow-400 mt-1 flex-shrink-0" />
-                <span className="text-gray-400 text-sm line-clamp-1">
+                <span className="text-gray-400 text-sm line-clamp-1 leading-snug">
                   {feature}
                 </span>
               </div>
             ))}
           </div>
 
-          <div className="flex gap-3 mt-auto">
+          <div className="flex gap-2 mt-auto">
             <button
               onClick={handleRepoClick}
-              className="flex items-center gap-2 px-4 py-2 bg-gray-700/50 hover:bg-gray-600/50 text-white rounded-lg transition-all duration-200 hover:scale-105"
+              className="flex items-center gap-2 px-3 py-2 bg-gray-700/50 hover:bg-gray-600/50 text-white rounded-lg transition-all duration-200 hover:scale-105 flex-1"
             >
               <Github className="w-4 h-4" />
               <span className="text-sm">GitLab</span>
             </button>
             <button
+              onClick={handleDocsClick}
+              className="flex items-center gap-2 px-3 py-2 bg-gray-700/50 hover:bg-gray-600/50 text-white rounded-lg transition-all duration-200 hover:scale-105 flex-1"
+            >
+              <FileText className="w-4 h-4" />
+              <span className="text-sm">Docs</span>
+            </button>
+            <button
               onClick={handleDemoClick}
-              className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 text-white rounded-lg transition-all duration-200 hover:scale-105"
+              className="flex items-center gap-2 px-3 py-2 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 text-white rounded-lg transition-all duration-200 hover:scale-105 flex-1"
             >
               <ExternalLink className="w-4 h-4" />
               <span className="text-sm">Demo</span>

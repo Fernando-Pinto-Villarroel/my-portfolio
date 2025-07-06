@@ -9,11 +9,13 @@ const ProjectsSection = ({ projects }) => {
   const categories = [
     "All",
     "Full-Stack",
-    "AI/ML",
     "Frontend",
     "Backend",
     "QA",
     "Desktop",
+    "Machine Learning",
+    "Deep Learning",
+    "IoT",
   ];
 
   const filteredProjects =

@@ -30,7 +30,7 @@ const ProjectModal = ({ project, isOpen, onClose, type }) => {
       return {
         title: "Private University Repository",
         message:
-          "Unfortunately, this is a private university repository that I cannot provide access to, but here are some images of the project.",
+          "Unfortunately, this is a private university repository that I cannot provide access to, but here are some screenshots of the project.",
         bgColor: "bg-yellow-500/20",
         borderColor: "border-yellow-500/30",
         textColor: "text-yellow-300",
@@ -43,6 +43,15 @@ const ProjectModal = ({ project, isOpen, onClose, type }) => {
         bgColor: "bg-red-500/20",
         borderColor: "border-red-500/30",
         textColor: "text-red-300",
+      };
+    } else if (type === "docs") {
+      return {
+        title: "Documentation Not Available",
+        message:
+          "Unfortunately, the documentation for this project is not available yet, but here are some screenshots of the project.",
+        bgColor: "bg-blue-500/20",
+        borderColor: "border-blue-500/30",
+        textColor: "text-blue-300",
       };
     }
     return {

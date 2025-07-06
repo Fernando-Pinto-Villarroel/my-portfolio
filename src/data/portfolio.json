@@ -26,6 +26,7 @@
       "category": ["Full-Stack"],
       "gitlab": "url",
       "demo": "url",
+      "docs": "url",
       "team": false,
       "features": [
         "Real-time multiplayer gameplay with synchronized game state.",
@@ -56,6 +57,7 @@
       "category": ["Desktop"],
       "gitlab": "https://gitlab.com/FernandoPinto1406/spaceinvaders",
       "demo": "url",
+      "docs": "url",
       "team": false,
       "features": [
         "Object-oriented programming with advanced design patterns (e.g., Singleton, Factory, Strategy, Composite patterns)",
@@ -82,6 +84,7 @@
       "category": ["Full-Stack"],
       "gitlab": "url",
       "demo": "url",
+      "docs": "url",
       "team": true,
       "features": [
         "Real-time forest fire visualization with NASA API integration.",
@@ -111,6 +114,7 @@
       "category": ["Full-Stack"],
       "gitlab": "url",
       "demo": "url",
+      "docs": "url",
       "team": true,
       "features": [
         "Responsive single-page application built with Webpack.",
@@ -144,6 +148,7 @@
       "category": ["Full-Stack"],
       "gitlab": "url",
       "demo": "url",
+      "docs": "url",
       "team": true,
       "features": [
         "Reactive forms with comprehensive input validations.",
@@ -165,6 +170,51 @@
       ]
     },
     {
+      "id": "pixpro",
+      "title": "PixPro",
+      "description": "An AI-driven image processing platform that empowers authenticated users to upload and batch-process photos through powerful AI models (ranging from Cloudinary's enhancement APIs and Gemini-powered filters to YOLO-based object detection) within a project-organized workspace. The system offers real-time WebSocket notifications, secure CDN-delivered downloads, and customizable parameter presets to streamline and safeguard every step of the workflow.",
+      "image": "/images/pixpro/main.png",
+      "technologies": [
+        "Express.js",
+        "C#",
+        "React",
+        "MongoDB",
+        "Redis",
+        "Cloudinary",
+        "RabbitMQ",
+        "Keycloak",
+        "Socket.io",
+        "LGTM Stack",
+        "Docker"
+      ],
+      "category": ["Full-Stack"],
+      "gitlab": "url",
+      "demo": "url",
+      "docs": "https://www.canva.com/design/DAGpLVjyrk0/6hSqDIXCl5YSqIEleBMczA/edit?utm_content=DAGpLVjyrk0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
+      "team": true,
+      "features": [
+        "Project-based organization with unlimited custom-named projects.",
+        "Selectable AI processing categories (Image Improvements, Image Effects, Object Detection)",
+        "Intuitive image upload (JPG/JPEG/PNG up to 20 MB) with batch uploads (up to 5 images).",
+        "Real-time WebSocket notifications showing status updates."
+      ],
+      "private": true,
+      "deployed": false,
+      "screenshots": [
+        "/images/pixpro/main.png",
+        "/images/pixpro/1.png",
+        "/images/pixpro/2.png",
+        "/images/pixpro/3.png",
+        "/images/pixpro/4.png",
+        "/images/pixpro/5.png",
+        "/images/pixpro/6.png",
+        "/images/pixpro/7.png",
+        "/images/pixpro/8.png",
+        "/images/pixpro/9.png",
+        "/images/pixpro/10.png"
+      ]
+    },
+    {
       "id": "say2you",
       "title": "Say2You",
       "description": "Real-time chat application CLI developed with C#, featuring comprehensive messaging capabilities, contact management, and group channels through MQTT protocol implementation.",
@@ -173,6 +223,7 @@
       "category": ["CLI"],
       "gitlab": "https://gitlab.com/say2you/say2you-client",
       "demo": "url",
+      "docs": "url",
       "team": false,
       "features": [
         "Advanced messaging system with MQTT real-time communication.",
@@ -200,9 +251,10 @@
         "Docker",
         "GCP"
       ],
-      "category": ["AI/ML", "Full-Stack"],
+      "category": ["Machine Learning", "Full-Stack"],
       "gitlab": "url",
       "demo": "url",
+      "docs": "url",
       "team": false,
       "features": [
         "Real-time ML model integration with TensorFlow",
@@ -231,9 +283,10 @@
         "Redis",
         "Docker"
       ],
-      "category": ["AI/ML", "Full-Stack", "CLI"],
+      "category": ["Machine Learning", "Full-Stack", "CLI"],
       "gitlab": "url",
       "demo": "url",
+      "docs": "url",
       "team": false,
       "features": [
         "Intelligent semantic search with natural language processing.",
@@ -255,6 +308,69 @@
       ]
     },
     {
+      "id": "revaitalize",
+      "title": "RevAItalize",
+      "description": "RevAItalize is a domain-focused AI healthcare platform offering two specialized assistants for dental and cardiology that guide users through interactive multimodal conversations with persistent context. The system is designed to be extended with new medical domains as needed for personalized clinical support.",
+      "image": "/images/revaitalize/main.png",
+      "technologies": ["React", "Django", "MongoDB", "Docker"],
+      "category": ["Deep Learning", "Full-Stack"],
+      "gitlab": "url",
+      "demo": "url",
+      "docs": "url",
+      "team": false,
+      "features": [
+        "Multimodal AI consultations combining text advice and medical illustrations",
+        "Real-time chat with conversation history, filtering, and optional encryption",
+        "Dynamic assistant configuration for prompt and hyperparameter updates without restarts",
+        "Secure image storage and CDN-backed delivery via Nginx file server"
+      ],
+      "private": true,
+      "deployed": false,
+      "screenshots": [
+        "/images/revaitalize/main.png",
+        "/images/revaitalize/1.png",
+        "/images/revaitalize/2.png",
+        "/images/revaitalize/3.png",
+        "/images/revaitalize/4.png"
+      ]
+    },
+    {
+      "id": "warehouse-monitoring",
+      "title": "Warehouse Monitoring System",
+      "description": "The Warehouse Monitoring System is an industrial IoT solution designed to continuously monitor and control environmental conditions in storage facilities by tracking temperature and humidity levels via DHT22 sensors connected to an ESP32 microcontroller, transmitting data to cloud services for real-time visualization, automatically activating cooling mechanisms and sending multichannel alerts when predefined safety thresholds are exceeded, and providing manual override capabilities through a secure web dashboard.",
+      "image": "/images/warehouse-monitoring/main.png",
+      "technologies": [
+        "React",
+        "Django",
+        "MongoDB",
+        "HiveMQ",
+        "Docker",
+        "TagoIO"
+      ],
+      "category": ["IoT", "Full-Stack"],
+      "gitlab": "https://gitlab.com/lucifer-projects/warehouse-monitoring-system",
+      "demo": "url",
+      "docs": "https://drive.google.com/file/d/1l26q5GokVfeNwZP2QXxdieNepp5Yw0Ev/view?usp=sharing",
+      "team": true,
+      "features": [
+        "Real-time temperature and humidity detection with live dashboard visualization on both desktop and mobile devices.",
+        "Automated cooling system activation whenever readings exceed 37°C or 70% humidity, ensuring rapid response to critical conditions.",
+        "Multi-channel alert system combining visual LED indicators, an audible buzzer, and email notifications to guarantee that alerts are always received.",
+        "Remote command and control through a web dashboard, allowing facility managers to manually open or close cooling systems as needed.",
+        "Cloud-based data analytics and customizable dashboards powered by TagoIO for advanced visualization, historical data trends, and rule-based alerts."
+      ],
+      "private": false,
+      "deployed": false,
+      "screenshots": [
+        "/images/warehouse-monitoring/main.png",
+        "/images/warehouse-monitoring/1.png",
+        "/images/warehouse-monitoring/2.png",
+        "/images/warehouse-monitoring/3.png",
+        "/images/warehouse-monitoring/4.png",
+        "/images/warehouse-monitoring/5.png"
+      ]
+    },
+    {
       "id": "crowdsourced-ideation",
       "title": "Crowdsourced Ideation Solution API",
       "description": "Multi-language API system developed in Java and C# for comprehensive user management and content publishing, featuring advanced database migration strategies from SQL to NoSQL.",
@@ -263,6 +379,7 @@
       "category": ["Backend"],
       "gitlab": "url",
       "demo": "url",
+      "docs": "url",
       "team": true,
       "features": [
         "Multi-language API architecture with Java and C# implementation.",
@@ -285,6 +402,7 @@
       "category": ["Backend"],
       "gitlab": "https://gitlab.com/FernandoPinto1406/snacks-api",
       "demo": "url",
+      "docs": "url",
       "team": false,
       "features": [
         "QR code integration for secure snack distribution validation.",
@@ -305,6 +423,7 @@
       "category": ["QA", "Testing"],
       "gitlab": "https://gitlab.com/FernandoPinto1406/spotify-api-testing",
       "demo": "url",
+      "docs": "url",
       "team": true,
       "features": [
         "Behavior-driven development with Cucumber.js framework.",
@@ -332,6 +451,7 @@
       "category": ["Desktop", "CLI"],
       "gitlab": "https://gitlab.com/FernandoPinto1406/sav",
       "demo": "https://sorting-visualizer-demo.vercel.app",
+      "docs": "url",
       "team": false,
       "features": [
         "Real-time visualization of multiple sorting algorithm processes.",
@@ -357,6 +477,7 @@
       "category": ["Desktop"],
       "gitlab": "https://gitlab.com/FernandoPinto1406/game2d",
       "demo": "url",
+      "docs": "url",
       "team": false,
       "features": [
         "Complete 2D game implementation with Java Swing framework.",
@@ -379,28 +500,28 @@
   "technologies": {
     "languages": [
       {
-        "name": "Java",
-        "level": 8,
-        "description": "Enterprise applications, Spring ecosystem, and scalable backend systems."
-      },
-      {
         "name": "C#",
-        "level": 7,
+        "level": 8,
         "description": "Full-stack development with ASP.NET Core and Entity Framework."
       },
       {
-        "name": "JavaScript",
+        "name": "Java",
         "level": 7,
+        "description": "Enterprise applications, Spring ecosystem, and scalable backend systems."
+      },
+      {
+        "name": "JavaScript",
+        "level": 6,
         "description": "Modern ES6+ features, async programming, and full-stack development."
       },
       {
         "name": "TypeScript",
-        "level": 6,
+        "level": 5,
         "description": "Type-safe development with advanced patterns and configurations."
       },
       {
         "name": "Python",
-        "level": 6,
+        "level": 5,
         "description": "Data science, machine learning, deep learning, and backend development with Django."
       },
       {
@@ -417,12 +538,12 @@
       },
       {
         "name": "Angular",
-        "level": 8,
+        "level": 6,
         "description": "Enterprise applications with reactive forms, services, and complex routing."
       },
       {
-        "name": "Vanilla JS, HTML, CSS",
-        "level": 7,
+        "name": "Vanilla JS",
+        "level": 6,
         "description": "Responsive design, modern CSS features, and cross-browser compatibility."
       },
       {
@@ -434,17 +555,17 @@
     "backend": [
       {
         "name": "Express.js",
-        "level": 9,
+        "level": 8,
         "description": "RESTful APIs, real-time communication, and middleware development."
       },
       {
-        "name": ".NET",
-        "level": 8,
+        "name": "ASP.NET Core",
+        "level": 7,
         "description": "Enterprise applications with advanced authentication and security."
       },
       {
         "name": "Spring",
-        "level": 7,
+        "level": 6,
         "description": "Microservices architecture, security, and database integration."
       },
       {
