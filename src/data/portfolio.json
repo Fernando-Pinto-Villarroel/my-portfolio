@@ -268,7 +268,7 @@
         "Docker",
         "TagoIO"
       ],
-      "category": ["IoT", "Full-Stack"],
+      "category": ["Full-Stack", "IoT"],
       "git": "https://gitlab.com/lucifer-projects/warehouse-monitoring-system",
       "demo": "url",
       "docs": "https://drive.google.com/file/d/1l26q5GokVfeNwZP2QXxdieNepp5Yw0Ev/view?usp=sharing",
@@ -428,7 +428,7 @@
         "Redis",
         "Docker"
       ],
-      "category": ["Machine Learning", "Full-Stack", "CLI"],
+      "category": ["Full-Stack", "Machine Learning", "CLI"],
       "git": "url",
       "demo": "url",
       "docs": "url",
@@ -458,7 +458,7 @@
       "description": "RevAItalize is a domain-focused AI healthcare platform offering two specialized assistants for dental and cardiology that guide users through interactive multimodal conversations with persistent context. The system is designed to be extended with new medical domains as needed for personalized clinical support.",
       "image": "/images/revaitalize/main.png",
       "technologies": ["React", "Django", "MongoDB", "Docker"],
-      "category": ["Deep Learning", "Full-Stack"],
+      "category": ["Full-Stack", "Deep Learning"],
       "git": "url",
       "demo": "url",
       "docs": "url",
