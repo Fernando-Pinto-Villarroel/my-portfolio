@@ -6,8 +6,8 @@
     "bio": "Passionate Software Engineering student with experience in full-stack development. I bring together technical precision with linguistic understanding to create innovative solutions. Currently pursuing my degree while building scalable applications and exploring the intersection of technology and human communication.",
     "location": "Cochabamba, Bolivia",
     "email": "ferpintovillarroel1406@gmail.com",
-    "gitlab": "https://gitlab.com/FernandoPinto1406",
-    "linkedin": "https://www.linkedin.com/in/fernando-pinto-villarroel-25a016292/",
+    "github": "https://github.com/Fernando-Pinto-Villarroel",
+    "linkedin": "https://www.linkedin.com/in/fernando-pinto-villarroel/",
     "photo": "images/ferpintovillarroel.foto.mediocuerpo.png",
     "languages": [
       "Spanish (Native)",
@@ -18,155 +18,93 @@
   },
   "projects": [
     {
-      "id": "uno-game",
-      "title": "UNO Game Platform",
-      "description": "Real-time multiplayer UNO game featuring complex game logic, visual effects, and seamless player communication through advanced WebSocket implementation.",
-      "image": "/images/uno-game/main.png",
-      "technologies": ["React", "Express.js", "MySQL", "Socket.io", "Docker"],
-      "category": ["Full-Stack"],
-      "gitlab": "url",
-      "demo": "url",
-      "docs": "url",
-      "team": false,
-      "features": [
-        "Real-time multiplayer gameplay with synchronized game state.",
-        "Advanced state management using functional programming patterns.",
-        "WebSocket-based communication for instant player interactions."
-      ],
-      "private": true,
-      "deployed": false,
-      "screenshots": [
-        "/images/uno-game/main.png",
-        "/images/uno-game/1.png",
-        "/images/uno-game/2.png",
-        "/images/uno-game/3.png",
-        "/images/uno-game/4.png",
-        "/images/uno-game/5.png",
-        "/images/uno-game/6.png",
-        "/images/uno-game/7.png",
-        "/images/uno-game/8.png",
-        "/images/uno-game/9.png"
-      ]
-    },
-    {
-      "id": "space-invaders",
-      "title": "Space Invaders",
-      "description": "A classic Space Invaders game developed in C# as part of Programming 3 coursework, implementing advanced OOP principles and two-way data binding for real-time user interactions.",
-      "image": "/images/space-invaders/main.png",
-      "technologies": ["UNO Platform", "C#", ".NET 9"],
-      "category": ["Desktop"],
-      "gitlab": "https://gitlab.com/FernandoPinto1406/spaceinvaders",
-      "demo": "url",
-      "docs": "url",
-      "team": false,
-      "features": [
-        "Object-oriented programming with advanced design patterns (e.g., Singleton, Factory, Strategy, Composite patterns)",
-        "Interactive gameplay with scoring system",
-        "Two-way data binding for dynamic UI updates"
-      ],
-      "private": false,
-      "deployed": false,
-      "screenshots": [
-        "/images/space-invaders/main.png",
-        "/images/space-invaders/1.png",
-        "/images/space-invaders/2.png",
-        "/images/space-invaders/3.png",
-        "/images/space-invaders/4.png",
-        "/images/space-invaders/5.png"
-      ]
-    },
-    {
-      "id": "home-mapper",
-      "title": "Home Mapper",
-      "description": "Interactive web application for visualizing forest fires in Bolivia with real-time data processing, geospatial analysis, and NASA API integration for comprehensive wildfire monitoring.",
-      "image": "/images/home-mapper/main.png",
-      "technologies": ["React", "Spring", "Docker", "GCP"],
-      "category": ["Full-Stack"],
-      "gitlab": "url",
-      "demo": "url",
-      "docs": "url",
-      "team": true,
-      "features": [
-        "Real-time forest fire visualization with NASA API integration.",
-        "Interactive geospatial mapping with advanced data processing.",
-        "Advanced state management for real-time data updates."
-      ],
-      "private": true,
-      "deployed": false,
-      "screenshots": [
-        "/images/home-mapper/main.png",
-        "/images/home-mapper/1.png"
-      ]
-    },
-    {
-      "id": "qatu-hatun",
-      "title": "Qatu Hatun E-commerce",
-      "description": "Complete e-commerce platform featuring responsive design, inventory management, and real-time chat integration using MQTT protocol for enhanced customer communication.",
-      "image": "/images/qatu-hatun/main.jpeg",
+      "id": "paperless-ngx-microservices-migration",
+      "title": "Paperless-NGX Microservices Migration",
+      "description": "Comprehensive migration of the open-source Paperless-NGX legacy monolithic system to a scalable microservices architecture. The legacy system (monolithic with OCR, Search modules, and AngularJS frontend) is gradually modernized using the Strangler Fig pattern with ACL (Anti-Corruption Layer) for seamless integration. Key microservices include OCR (with PostgreSQL) and Search (with Elasticsearch). Modern architecture supports millions of users, featuring a React SPA frontend with TypeScript, Vite, Zustand, and Tanstack Router; API Gateway using Ocelot in C# ASP.NET Core; OCR and Search microservices in C# and TypeScript respectively; RabbitMQ for event-driven communication; and bidirectional synchronization via ACL background service. This is the most complete full-stack project, incorporating observability with LGTM and Sentry, Docker deployment, and Supabase CDN.",
+      "image": "/images/paperless-ngx-microservices-migration/main.png",
       "technologies": [
-        "Vanilla JavaScript",
+        "React",
+        "TypeScript",
+        "Vite",
+        "Zustand",
+        "Tanstack Router",
+        "C#",
         "ASP.NET Core",
-        "MongoDB",
-        "Mosquitto",
-        "Firebase",
-        "Docker"
+        "Ocelot",
+        "PostgreSQL",
+        "Elasticsearch",
+        "RabbitMQ",
+        "Docker",
+        "LGTM",
+        "Sentry",
+        "Supabase"
       ],
       "category": ["Full-Stack"],
-      "gitlab": "url",
+      "git": "url",
       "demo": "url",
-      "docs": "url",
+      "docs": "https://paperdevs-demo-dec-3-2025.netlify.app/slide-1",
       "team": true,
       "features": [
-        "Responsive single-page application built with Webpack.",
-        "Real-time chat system using MQTT (Mosquitto) protocol.",
-        "RESTful API architecture for seamless data management."
+        "Gradual microservices migration using Strangler Fig and ACL patterns",
+        "Bidirectional synchronization between legacy and modern systems",
+        "Scalable architecture with independent microservices",
+        "Event-driven communication with RabbitMQ",
+        "Modern React SPA with advanced state management",
+        "Comprehensive observability and deployment tools"
       ],
       "private": true,
       "deployed": false,
       "screenshots": [
-        "/images/qatu-hatun/main.jpeg",
-        "/images/qatu-hatun/1.png",
-        "/images/qatu-hatun/2.png",
-        "/images/qatu-hatun/3.jpeg",
-        "/images/qatu-hatun/4.png",
-        "/images/qatu-hatun/5.png"
+        "/images/paperless-ngx-microservices-migration/main.png",
+        "/images/paperless-ngx-microservices-migration/1.mp4",
+        "/images/paperless-ngx-microservices-migration/2.mp4"
       ]
     },
     {
-      "id": "booking-system",
-      "title": "Booking Management System",
-      "description": "Enterprise-level booking system with advanced reservation management, reactive forms, comprehensive validations, and role-based access control for scalable business operations.",
-      "image": "/images/booking-system/main.png",
+      "id": "battle-tanks",
+      "title": "Battle Tanks",
+      "description": "Real-time multiplayer game replicating the classic Battle Tanks experience. Built as a full-stack application with Angular frontend using SignalR store for state management, and C# ASP.NET Core backend implementing CQRS pattern with MediatR. Features hexagonal architecture in backend and feature-based architecture in frontend. Real-time communication via MQTT for secondary features (chat, powerups) and SignalR for core gameplay (movement, shooting, collisions). Implements professional database practices including sharding, partitioning, and replication with PostgreSQL, plus Redis caching for GET endpoints. Docker infrastructure. Comprehensive testing suite with Apache JMeter, Postman, K6, and more. Focus on real-time performance and scalability for concurrent users. Includes additional Angular Map Creator tool for advanced map design with JSON import/export and tile editing.",
+      "image": "/images/battle-tanks/main.png",
       "technologies": [
         "Angular",
-        "Express.js (TS)",
-        "MongoDB",
-        "Keycloak",
+        "C#",
+        "ASP.NET Core",
+        "MediatR",
+        "PostgreSQL",
+        "Redis",
+        "MQTT",
+        "Mosquitto",
+        "SignalR",
         "Docker",
-        "GCP"
+        "Apache JMeter",
+        "Postman",
+        "K6"
       ],
       "category": ["Full-Stack"],
-      "gitlab": "url",
+      "git": "url",
       "demo": "url",
       "docs": "url",
-      "team": true,
+      "team": false,
       "features": [
-        "Reactive forms with comprehensive input validations.",
-        "Role-based access control with multiple permission levels.",
-        "Enterprise-grade security and data protection measures."
+        "Real-time multiplayer gameplay with synchronized state",
+        "Advanced architectural patterns: CQRS, Hexagonal, Feature-based",
+        "Real-time communication with MQTT and SignalR",
+        "Professional database optimization: sharding, partitioning, replication",
+        "Performance testing and monitoring tools",
+        "Additional Map Creator tool for game development"
       ],
       "private": true,
       "deployed": false,
       "screenshots": [
-        "/images/booking-system/main.png",
-        "/images/booking-system/1.png",
-        "/images/booking-system/2.png",
-        "/images/booking-system/3.png",
-        "/images/booking-system/4.png",
-        "/images/booking-system/5.png",
-        "/images/booking-system/6.png",
-        "/images/booking-system/7.png",
-        "/images/booking-system/8.png"
+        "/images/battle-tanks/1.png",
+        "/images/battle-tanks/2.png",
+        "/images/battle-tanks/3.png",
+        "/images/battle-tanks/4.png",
+        "/images/battle-tanks/5.png",
+        "/images/battle-tanks/6.png",
+        "/images/battle-tanks/7.png",
+        "/images/battle-tanks/8.png",
+        "/images/battle-tanks/9.png"
       ]
     },
     {
@@ -188,7 +126,7 @@
         "Docker"
       ],
       "category": ["Full-Stack"],
-      "gitlab": "url",
+      "git": "url",
       "demo": "url",
       "docs": "https://www.canva.com/design/DAGpLVjyrk0/6hSqDIXCl5YSqIEleBMczA/edit?utm_content=DAGpLVjyrk0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
       "team": true,
@@ -215,59 +153,265 @@
       ]
     },
     {
-      "id": "say2you",
-      "title": "Say2You",
-      "description": "Real-time chat application CLI developed with C#, featuring comprehensive messaging capabilities, contact management, and group channels through MQTT protocol implementation.",
-      "image": "/images/say2you/main.png",
-      "technologies": ["C#", "Mosquitto", "PostgreSQL", "Docker"],
-      "category": ["CLI"],
-      "gitlab": "https://gitlab.com/say2you/say2you-client",
+      "id": "uno-game",
+      "title": "UNO Game Platform",
+      "description": "Real-time multiplayer UNO game featuring complex game logic, visual effects, and seamless player communication through advanced WebSocket implementation.",
+      "image": "/images/uno-game/main.png",
+      "technologies": ["React", "Express.js", "MySQL", "Socket.io", "Docker"],
+      "category": ["Full-Stack"],
+      "git": "url",
       "demo": "url",
       "docs": "url",
       "team": false,
       "features": [
-        "Advanced messaging system with MQTT real-time communication.",
-        "Contact and Group management system with registration and deletion capabilities.",
-        "Secure message encryption and user authentication."
-      ],
-      "private": false,
-      "deployed": false,
-      "screenshots": [
-        "/images/say2you/1.png",
-        "/images/say2you/2.png",
-        "/images/say2you/3.png",
-        "/images/say2you/4.png"
-      ]
-    },
-    {
-      "id": "tongue-pathology",
-      "title": "Tongue Pathology Detector",
-      "description": "AI-powered medical application for real-time tongue pathology detection using advanced machine learning models and comprehensive image processing algorithms.",
-      "image": "/images/tongue-pathology/main.png",
-      "technologies": [
-        "Vanilla JavaScript",
-        "Python",
-        "TensorFlow",
-        "Docker",
-        "GCP"
-      ],
-      "category": ["Machine Learning", "Full-Stack"],
-      "gitlab": "url",
-      "demo": "url",
-      "docs": "url",
-      "team": false,
-      "features": [
-        "Real-time ML model integration with TensorFlow",
-        "Advanced medical data analysis",
-        "Accurate pathology detection"
+        "Real-time multiplayer gameplay with synchronized game state.",
+        "Advanced state management using functional programming patterns.",
+        "WebSocket-based communication for instant player interactions."
       ],
       "private": true,
       "deployed": false,
       "screenshots": [
-        "/images/tongue-pathology/1.png",
-        "/images/tongue-pathology/main.png",
-        "/images/tongue-pathology/2.png",
-        "/images/tongue-pathology/3.png"
+        "/images/uno-game/main.png",
+        "/images/uno-game/1.png",
+        "/images/uno-game/2.png",
+        "/images/uno-game/3.png",
+        "/images/uno-game/4.png",
+        "/images/uno-game/5.png",
+        "/images/uno-game/6.png",
+        "/images/uno-game/7.png",
+        "/images/uno-game/8.png",
+        "/images/uno-game/9.png"
+      ]
+    },
+    {
+      "id": "booking-system",
+      "title": "Booking Management System",
+      "description": "Enterprise-level booking system with advanced reservation management, reactive forms, comprehensive validations, and role-based access control for scalable business operations.",
+      "image": "/images/booking-system/main.png",
+      "technologies": [
+        "Angular",
+        "Express.js (TS)",
+        "MongoDB",
+        "Keycloak",
+        "Docker",
+        "GCP"
+      ],
+      "category": ["Full-Stack"],
+      "git": "url",
+      "demo": "url",
+      "docs": "url",
+      "team": true,
+      "features": [
+        "Reactive forms with comprehensive input validations.",
+        "Role-based access control with multiple permission levels.",
+        "Enterprise-grade security and data protection measures."
+      ],
+      "private": true,
+      "deployed": false,
+      "screenshots": [
+        "/images/booking-system/main.png",
+        "/images/booking-system/1.png",
+        "/images/booking-system/2.png",
+        "/images/booking-system/3.png",
+        "/images/booking-system/4.png",
+        "/images/booking-system/5.png",
+        "/images/booking-system/6.png",
+        "/images/booking-system/7.png",
+        "/images/booking-system/8.png"
+      ]
+    },
+    {
+      "id": "qatu-hatun",
+      "title": "Qatu Hatun E-commerce",
+      "description": "Complete e-commerce platform featuring responsive design, inventory management, and real-time chat integration using MQTT protocol for enhanced customer communication.",
+      "image": "/images/qatu-hatun/main.jpeg",
+      "technologies": [
+        "Vanilla JavaScript",
+        "ASP.NET Core",
+        "MongoDB",
+        "Mosquitto",
+        "Firebase",
+        "Docker"
+      ],
+      "category": ["Full-Stack"],
+      "git": "url",
+      "demo": "url",
+      "docs": "url",
+      "team": true,
+      "features": [
+        "Responsive single-page application built with Webpack.",
+        "Real-time chat system using MQTT (Mosquitto) protocol.",
+        "RESTful API architecture for seamless data management."
+      ],
+      "private": true,
+      "deployed": false,
+      "screenshots": [
+        "/images/qatu-hatun/main.jpeg",
+        "/images/qatu-hatun/1.png",
+        "/images/qatu-hatun/2.png",
+        "/images/qatu-hatun/3.jpeg",
+        "/images/qatu-hatun/4.png",
+        "/images/qatu-hatun/5.png"
+      ]
+    },
+    {
+      "id": "warehouse-monitoring",
+      "title": "Warehouse Monitoring System",
+      "description": "The Warehouse Monitoring System is an industrial IoT solution designed to continuously monitor and control environmental conditions in storage facilities by tracking temperature and humidity levels via DHT22 sensors connected to an ESP32 microcontroller, transmitting data to cloud services for real-time visualization, automatically activating cooling mechanisms and sending multichannel alerts when predefined safety thresholds are exceeded, and providing manual override capabilities through a secure web dashboard.",
+      "image": "/images/warehouse-monitoring/main.png",
+      "technologies": [
+        "React",
+        "Django",
+        "MongoDB",
+        "HiveMQ",
+        "Docker",
+        "TagoIO"
+      ],
+      "category": ["IoT", "Full-Stack"],
+      "git": "https://gitlab.com/lucifer-projects/warehouse-monitoring-system",
+      "demo": "url",
+      "docs": "https://drive.google.com/file/d/1l26q5GokVfeNwZP2QXxdieNepp5Yw0Ev/view?usp=sharing",
+      "team": true,
+      "features": [
+        "Real-time temperature and humidity detection with live dashboard visualization on both desktop and mobile devices.",
+        "Automated cooling system activation whenever readings exceed 37°C or 70% humidity, ensuring rapid response to critical conditions.",
+        "Multi-channel alert system combining visual LED indicators, an audible buzzer, and email notifications to guarantee that alerts are always received.",
+        "Remote command and control through a web dashboard, allowing facility managers to manually open or close cooling systems as needed.",
+        "Cloud-based data analytics and customizable dashboards powered by TagoIO for advanced visualization, historical data trends, and rule-based alerts."
+      ],
+      "private": false,
+      "deployed": false,
+      "screenshots": [
+        "/images/warehouse-monitoring/main.png",
+        "/images/warehouse-monitoring/1.png",
+        "/images/warehouse-monitoring/2.png",
+        "/images/warehouse-monitoring/3.png",
+        "/images/warehouse-monitoring/4.png",
+        "/images/warehouse-monitoring/5.png"
+      ]
+    },
+    {
+      "id": "gaming-audio-processing",
+      "title": "Gaming Audio Processing System",
+      "description": "A concurrent and parallel audio processing platform built for Programming 7 coursework to master async, parallel, and concurrent programming across frontend and backend. The C# ASP.NET Core backend follows Hexagonal + Clean Architecture with CQRS (MediatR) and uses SignalR for real-time notifications, SemaphoreSlim and Parallel.ForEachAsync for concurrent processing pipelines (compression → transcription → summarization / DSP filtering), and spawns CPU-bound Python processes (Whisper, BART CNN) and FFmpeg + NAudio + MathNet for audio DSP filtering. The React + TypeScript + Vite frontend implements a Web Worker pool, assigning one worker per audio for fully parallel client-side processing with Transformers.js (Whisper Tiny for transcription, MobileBERT MNLI for gaming content domain validation). Processed files (original, compressed, filtered) are stored on a Dockerized MinIO instance. Performance benchmarked with K6 — parallel processing achieved 2× speedup over sequential, validated using Amdahl's Law.",
+      "image": "/images/gaming-audio-processing/main.png",
+      "technologies": [
+        "React",
+        "TypeScript",
+        "Vite",
+        "TailwindCSS",
+        "Transformers.js",
+        "C#",
+        "ASP.NET Core",
+        "MediatR",
+        "SignalR",
+        "Python",
+        "FFmpeg",
+        "NAudio",
+        "MinIO",
+        "Docker",
+        "K6"
+      ],
+      "category": ["Full-Stack"],
+      "git": "url",
+      "demo": "url",
+      "docs": "https://progra7-final-demo-march11th-2026-fpv.netlify.app/slide-1",
+      "team": false,
+      "features": [
+        "Web Worker pool for parallel client-side audio processing — one worker assigned per audio file",
+        "Client-side AI pipeline: transcription (Whisper Tiny) → gaming domain validation (MobileBERT MNLI) via Transformers.js",
+        "Backend concurrent pipeline: compression (FFmpeg) → transcription (Whisper) → summarization (BART CNN) / DSP filtering (NAudio + MathNet)",
+        "CPU-bound Python process integration for AI inference (Whisper, BART CNN) and Amdahl's Law-based parallelization",
+        "Real-time SignalR notifications and batch audio upload support with concurrent queues and cancellation tokens",
+        "K6 performance benchmarks proving 2× speedup of parallel processing over sequential baseline"
+      ],
+      "private": true,
+      "deployed": false,
+      "screenshots": [
+        "/images/gaming-audio-processing/1.png",
+        "/images/gaming-audio-processing/2.png",
+        "/images/gaming-audio-processing/3.png",
+        "/images/gaming-audio-processing/4.png",
+        "/images/gaming-audio-processing/5.png",
+        "/images/gaming-audio-processing/6.png",
+        "/images/gaming-audio-processing/7.png",
+        "/images/gaming-audio-processing/8.png",
+        "/images/gaming-audio-processing/9.png",
+        "/images/gaming-audio-processing/10.png",
+        "/images/gaming-audio-processing/11.png",
+        "/images/gaming-audio-processing/12.png",
+        "/images/gaming-audio-processing/13.png",
+        "/images/gaming-audio-processing/14.png",
+        "/images/gaming-audio-processing/15.png",
+        "/images/gaming-audio-processing/16.png",
+        "/images/gaming-audio-processing/17.png",
+        "/images/gaming-audio-processing/18.png",
+        "/images/gaming-audio-processing/19.png",
+        "/images/gaming-audio-processing/20.png",
+        "/images/gaming-audio-processing/21.png",
+        "/images/gaming-audio-processing/22.png"
+      ]
+    },
+    {
+      "id": "mvp-platform",
+      "title": "Startup Idea Validator",
+      "description": "An MVP web platform for crowdsourced startup idea validation, combining community feedback with AI-powered market analysis. Users submit business ideas and receive community reactions (likes, comments, 'I'd pay for it' engagement), while an integrated AI engine uses SerpAPI to retrieve real-time market data and OpenAI GPT models to generate structured validation reports covering risks, opportunities, and competitive landscape. Contributed to: AI integration pipeline, overall UI/UX redesign, Supabase PostgreSQL database architecture and OAuth authentication (Google IDP), and a fully functional PayPal SDK payment integration enabling users to purchase in-app credits.",
+      "image": "/images/mvp-platform/main.png",
+      "technologies": [
+        "React",
+        "TypeScript",
+        "Next.js",
+        "Redux Toolkit",
+        "SerpAPI",
+        "OpenAI API",
+        "Supabase",
+        "PostgreSQL",
+        "PayPal SDK"
+      ],
+      "category": ["Full-Stack"],
+      "git": "url",
+      "demo": "url",
+      "docs": "url",
+      "team": true,
+      "features": [
+        "Community idea validation with likes, comments, and 'I'd pay for it' engagement signals",
+        "AI-powered market analysis using SerpAPI (real-time search context) + OpenAI GPT (risks, opportunities, competitive landscape)",
+        "Fully functional PayPal SDK integration for purchasing in-app credits",
+        "Supabase PostgreSQL database with Google OAuth authentication",
+        "UI/UX redesign and Next.js App Router architecture"
+      ],
+      "private": true,
+      "deployed": false,
+      "screenshots": [
+        "/images/mvp-platform/1.png",
+        "/images/mvp-platform/main.png",
+        "/images/mvp-platform/2.png",
+        "/images/mvp-platform/3.png",
+        "/images/mvp-platform/4.png",
+        "/images/mvp-platform/5.png",
+        "/images/mvp-platform/6.png",
+        "/images/mvp-platform/7.png",
+        "/images/mvp-platform/8.png",
+        "/images/mvp-platform/9.png",
+        "/images/mvp-platform/10.png",
+        "/images/mvp-platform/11.png",
+        "/images/mvp-platform/12.png",
+        "/images/mvp-platform/13.png",
+        "/images/mvp-platform/14.png",
+        "/images/mvp-platform/15.png",
+        "/images/mvp-platform/16.png",
+        "/images/mvp-platform/17.png",
+        "/images/mvp-platform/18.png",
+        "/images/mvp-platform/19.png",
+        "/images/mvp-platform/20.png",
+        "/images/mvp-platform/21.png",
+        "/images/mvp-platform/22.png",
+        "/images/mvp-platform/23.png",
+        "/images/mvp-platform/24.png",
+        "/images/mvp-platform/25.png",
+        "/images/mvp-platform/26.png",
+        "/images/mvp-platform/27.png",
+        "/images/mvp-platform/28.png"
       ]
     },
     {
@@ -284,7 +428,7 @@
         "Docker"
       ],
       "category": ["Machine Learning", "Full-Stack", "CLI"],
-      "gitlab": "url",
+      "git": "url",
       "demo": "url",
       "docs": "url",
       "team": false,
@@ -314,7 +458,7 @@
       "image": "/images/revaitalize/main.png",
       "technologies": ["React", "Django", "MongoDB", "Docker"],
       "category": ["Deep Learning", "Full-Stack"],
-      "gitlab": "url",
+      "git": "url",
       "demo": "url",
       "docs": "url",
       "team": false,
@@ -335,39 +479,510 @@
       ]
     },
     {
-      "id": "warehouse-monitoring",
-      "title": "Warehouse Monitoring System",
-      "description": "The Warehouse Monitoring System is an industrial IoT solution designed to continuously monitor and control environmental conditions in storage facilities by tracking temperature and humidity levels via DHT22 sensors connected to an ESP32 microcontroller, transmitting data to cloud services for real-time visualization, automatically activating cooling mechanisms and sending multichannel alerts when predefined safety thresholds are exceeded, and providing manual override capabilities through a secure web dashboard.",
-      "image": "/images/warehouse-monitoring/main.png",
-      "technologies": [
-        "React",
-        "Django",
-        "MongoDB",
-        "HiveMQ",
-        "Docker",
-        "TagoIO"
-      ],
-      "category": ["IoT", "Full-Stack"],
-      "gitlab": "https://gitlab.com/lucifer-projects/warehouse-monitoring-system",
+      "id": "home-mapper",
+      "title": "Home Mapper",
+      "description": "Interactive web application for visualizing forest fires in Bolivia with real-time data processing, geospatial analysis, and NASA API integration for comprehensive wildfire monitoring.",
+      "image": "/images/home-mapper/main.png",
+      "technologies": ["React", "Spring", "Docker", "GCP"],
+      "category": ["Full-Stack"],
+      "git": "url",
       "demo": "url",
-      "docs": "https://drive.google.com/file/d/1l26q5GokVfeNwZP2QXxdieNepp5Yw0Ev/view?usp=sharing",
+      "docs": "url",
       "team": true,
       "features": [
-        "Real-time temperature and humidity detection with live dashboard visualization on both desktop and mobile devices.",
-        "Automated cooling system activation whenever readings exceed 37°C or 70% humidity, ensuring rapid response to critical conditions.",
-        "Multi-channel alert system combining visual LED indicators, an audible buzzer, and email notifications to guarantee that alerts are always received.",
-        "Remote command and control through a web dashboard, allowing facility managers to manually open or close cooling systems as needed.",
-        "Cloud-based data analytics and customizable dashboards powered by TagoIO for advanced visualization, historical data trends, and rule-based alerts."
+        "Real-time forest fire visualization with NASA API integration.",
+        "Interactive geospatial mapping with advanced data processing.",
+        "Advanced state management for real-time data updates."
       ],
-      "private": false,
+      "private": true,
       "deployed": false,
       "screenshots": [
-        "/images/warehouse-monitoring/main.png",
-        "/images/warehouse-monitoring/1.png",
-        "/images/warehouse-monitoring/2.png",
-        "/images/warehouse-monitoring/3.png",
-        "/images/warehouse-monitoring/4.png",
-        "/images/warehouse-monitoring/5.png"
+        "/images/home-mapper/main.png",
+        "/images/home-mapper/1.png"
+      ]
+    },
+    {
+      "id": "wira-ai",
+      "title": "Wira AI",
+      "description": "AI-powered air pollution analysis platform that won 1st place in NASA Space Apps Challenge 2025, Cochabamba, Bolivia. Team CloudCatchers developed a React frontend with JavaScript, Vite, and TailwindCSS, integrating multiple APIs including OpenWeatherMap and NASA TEMPO data. Features data cleaning, ML model training for weather predictions, and integrated Gemini LLM for clear explanations of air pollution globally, by country, and city. Includes pages for news, actions, predictions (self-retraining with N8N in cloud), chat with LLM, analytics, etc. Proposal slides available at the demo link.",
+      "image": "/images/wira-ai/main.png",
+      "technologies": [
+        "React",
+        "JavaScript",
+        "Vite",
+        "TailwindCSS",
+        "OpenWeatherMap API",
+        "NASA TEMPO",
+        "Gemini LLM",
+        "N8N"
+      ],
+      "category": ["Frontend", "Machine Learning", "Deep Learning"],
+      "git": "url",
+      "demo": "https://wira-ai-nasa-space-2025.netlify.app/",
+      "docs": "https://wira-ai-nasa-space-2025.netlify.app/slides",
+      "team": true,
+      "features": [
+        "1st place NASA Space Apps Challenge winner",
+        "ML model for air pollution predictions",
+        "LLM integration for pollution explanations",
+        "Multi-API data integration and cleaning",
+        "Self-retraining prediction system",
+        "Comprehensive analytics and news platform"
+      ],
+      "private": true,
+      "deployed": true,
+      "screenshots": [
+        "/images/wira-ai/main.png",
+        "/images/wira-ai/1.png",
+        "/images/wira-ai/2.png",
+        "/images/wira-ai/3.png",
+        "/images/wira-ai/4.png",
+        "/images/wira-ai/5.png",
+        "/images/wira-ai/6.png",
+        "/images/wira-ai/7.png",
+        "/images/wira-ai/8.png",
+        "/images/wira-ai/9.png",
+        "/images/wira-ai/10.png",
+        "/images/wira-ai/11.png",
+        "/images/wira-ai/12.png",
+        "/images/wira-ai/13.png",
+        "/images/wira-ai/14.mp4",
+        "/images/wira-ai/15.png"
+      ]
+    },
+    {
+      "id": "gpa-calculator",
+      "title": "GPA Calculator for Jala University",
+      "description": "A feature-rich cumulative and semester GPA calculator built specifically for Jala University students, where each cohort follows a distinct academic program structure — making standard GPA tools unreliable. Built with React, Next.js, TypeScript, Zustand, and TailwindCSS following a feature-based architecture. Key pages include: a dashboard displaying CGPA, statistics, and honor distinctions (cum laude); a grades page for registering scores per cohort, semester, and subject (with retake support); automatic grade import from the official SIS PDF export via client-side text extraction and parsing using a Web Worker; full data portability via JSON import/export (all data stored in localStorage only — never on a server or database); a statistics page with Recharts visualizations; and a forecasting page for modeling grade combinations needed to reach a target CGPA. Also features dark/light theme toggle, internationalization across 3 locales (/en, /es, /pt), and a React Joyride guided tour for new user onboarding. A personal open-source project built to help the Jala University student community.",
+      "image": "/images/gpa-calculator/main.png",
+      "technologies": [
+        "React",
+        "Next.js",
+        "TypeScript",
+        "Zustand",
+        "TailwindCSS",
+        "Recharts"
+      ],
+      "category": ["Frontend"],
+      "git": "https://github.com/Fernando-Pinto-Villarroel/gpa-calculator",
+      "demo": "https://jalau-gpa-calculator.vercel.app/en",
+      "docs": "https://github.com/Fernando-Pinto-Villarroel/gpa-calculator/blob/main/README.md",
+      "team": false,
+      "features": [
+        "Dashboard with CGPA, semester GPA, statistics, and honor distinction (cum laude) display",
+        "Grade registration per cohort, semester, and subject — including multiple retake attempts",
+        "Automatic grade import from official SIS PDF export via Web Worker text extraction and parsing",
+        "JSON import/export with full localStorage privacy (no server or database involved)",
+        "Grade forecasting page to model score combinations needed to reach a target CGPA",
+        "Internationalization (EN/ES/PT), dark/light theme, and React Joyride guided onboarding tour",
+        "Progressive Web App (PWA) support, allowing installation as a desktop or mobile app"
+      ],
+      "private": false,
+      "deployed": true,
+      "screenshots": [
+        "/images/gpa-calculator/main.png",
+        "/images/gpa-calculator/1.png",
+        "/images/gpa-calculator/2.png",
+        "/images/gpa-calculator/3.png",
+        "/images/gpa-calculator/4.png",
+        "/images/gpa-calculator/5.png",
+        "/images/gpa-calculator/6.png",
+        "/images/gpa-calculator/7.png",
+        "/images/gpa-calculator/8.png",
+        "/images/gpa-calculator/9.png",
+        "/images/gpa-calculator/10.png",
+        "/images/gpa-calculator/11.png",
+        "/images/gpa-calculator/12.png",
+        "/images/gpa-calculator/13.png",
+        "/images/gpa-calculator/14.png",
+        "/images/gpa-calculator/15.png",
+        "/images/gpa-calculator/16.png",
+        "/images/gpa-calculator/17.png",
+        "/images/gpa-calculator/18.png",
+        "/images/gpa-calculator/19.png",
+        "/images/gpa-calculator/20.png",
+        "/images/gpa-calculator/21.png"
+      ]
+    },
+    {
+      "id": "jala-library",
+      "title": "JalaLibrary",
+      "description": "Library management system with dual user roles (normal users and admins). Admins can perform CRUD operations on books, including managing available copies for loans. Normal users can view books, search, filter, sort, borrow books, add to wishlist, and receive notifications for changes in availability. Built as a single React frontend with Next.js using app router and file-based routing, Material UI, TailwindCSS, and Redux Toolkit for state management. Connects to Supabase PostgreSQL database with triggers, functions, indexes, and RLS policies for security. Includes Supabase Auth with email/password and Google OAuth, JWT and refresh token handling. Features light/dark theme. Full-stack architecture where Next.js handles SSR and abstracts Supabase calls.",
+      "image": "/images/jala-library/main.png",
+      "technologies": [
+        "React",
+        "Next.js",
+        "Material UI",
+        "TailwindCSS",
+        "Redux Toolkit",
+        "Supabase",
+        "PostgreSQL"
+      ],
+      "category": ["Frontend"],
+      "git": "url",
+      "demo": "url",
+      "docs": "https://jala-library-slides.netlify.app/slide/1",
+      "team": false,
+      "features": [
+        "Dual role system: admin and user functionalities",
+        "Advanced book management with CRUD operations",
+        "Wishlist and notification system",
+        "Supabase integration with security policies",
+        "Authentication with multiple providers",
+        "Responsive design with theme support"
+      ],
+      "private": true,
+      "deployed": false,
+      "screenshots": [
+        "/images/jala-library/main.png",
+        "/images/jala-library/1.png",
+        "/images/jala-library/2.png",
+        "/images/jala-library/3.png",
+        "/images/jala-library/4.png",
+        "/images/jala-library/5.png",
+        "/images/jala-library/6.png"
+      ]
+    },
+    {
+      "id": "tongue-pathology",
+      "title": "Tongue Pathology Detector",
+      "description": "AI-powered medical application for real-time tongue pathology detection using advanced machine learning models and comprehensive image processing algorithms.",
+      "image": "/images/tongue-pathology/main.png",
+      "technologies": [
+        "Vanilla JavaScript",
+        "Python",
+        "TensorFlow",
+        "Docker",
+        "GCP"
+      ],
+      "category": ["Frontend", "Deep Learning"],
+      "git": "url",
+      "demo": "https://tongue-pathology-detector.netlify.app/",
+      "docs": "url",
+      "team": false,
+      "features": [
+        "Real-time ML model integration with TensorFlow",
+        "Advanced medical data analysis",
+        "Accurate pathology detection"
+      ],
+      "private": true,
+      "deployed": true,
+      "screenshots": [
+        "/images/tongue-pathology/main.png",
+        "/images/tongue-pathology/1.png",
+        "/images/tongue-pathology/2.png",
+        "/images/tongue-pathology/3.png",
+        "/images/tongue-pathology/4.png",
+        "/images/tongue-pathology/5.png",
+        "/images/tongue-pathology/6.png",
+        "/images/tongue-pathology/7.png"
+      ]
+    },
+    {
+      "id": "advanced-weather-app",
+      "title": "Advanced Weather App",
+      "description": "React application with TypeScript and Vite for displaying current weather and 5-day forecast. Uses browser geolocation for automatic location detection, animated weather display with temperature and other data. Search functionality for any global city. Connects to OpenWeatherMap API. Includes user authentication via Fake Store API with login, register, logout, JWT and refresh tokens. Features light/dark theme toggle. Redux Toolkit for state management. Frontend project with external APIs.",
+      "image": "/images/advanced-weather-app/main.png",
+      "technologies": [
+        "React",
+        "TypeScript",
+        "Vite",
+        "Redux Toolkit",
+        "OpenWeatherMap API",
+        "Fake Store API"
+      ],
+      "category": ["Frontend"],
+      "git": "url",
+      "demo": "https://my-advanced-weather-app.netlify.app/",
+      "docs": "url",
+      "team": false,
+      "features": [
+        "Real-time weather data with geolocation",
+        "5-day forecast and global city search",
+        "User authentication with JWT handling",
+        "Theme switching (light/dark)",
+        "Animated weather displays",
+        "Advanced state management with Redux"
+      ],
+      "private": true,
+      "deployed": true,
+      "screenshots": [
+        "/images/advanced-weather-app/main.png",
+        "/images/advanced-weather-app/1.png",
+        "/images/advanced-weather-app/2.png",
+        "/images/advanced-weather-app/3.png",
+        "/images/advanced-weather-app/4.png",
+        "/images/advanced-weather-app/5.png",
+        "/images/advanced-weather-app/6.png",
+        "/images/advanced-weather-app/7.png",
+        "/images/advanced-weather-app/8.png"
+      ]
+    },
+    {
+      "id": "banco-de-sangre",
+      "title": "Cochabamba's Blood Bank Website",
+      "description": "Web application for the local blood bank, serving as more than a landing page by providing real user interaction metrics and multi-role content management. Users (admin, marketing, doctors) can modify texts and media (images/videos) with full freedom. Built with React, TailwindCSS, Supabase PostgreSQL, React Router, Vite. Uses Cloudinary CDN. Frontend project with Supabase as server layer.",
+      "image": "/images/banco-de-sangre/main.png",
+      "technologies": [
+        "React",
+        "TailwindCSS",
+        "Supabase",
+        "PostgreSQL",
+        "React Router",
+        "Vite",
+        "Cloudinary"
+      ],
+      "category": ["Frontend"],
+      "git": "url",
+      "demo": "https://demo-banco-de-sangre-cbba.netlify.app/",
+      "docs": "url",
+      "team": false,
+      "features": [
+        "Multi-role content management system",
+        "Real-time user interaction metrics",
+        "Dynamic content editing for texts and media",
+        "Supabase integration for database and auth",
+        "Cloudinary CDN for media storage",
+        "Responsive design with TailwindCSS"
+      ],
+      "private": true,
+      "deployed": true,
+      "screenshots": [
+        "/images/banco-de-sangre/main.png",
+        "/images/banco-de-sangre/1.png",
+        "/images/banco-de-sangre/2.png",
+        "/images/banco-de-sangre/3.png",
+        "/images/banco-de-sangre/4.png",
+        "/images/banco-de-sangre/5.png",
+        "/images/banco-de-sangre/6.png",
+        "/images/banco-de-sangre/7.png",
+        "/images/banco-de-sangre/8.png",
+        "/images/banco-de-sangre/9.png",
+        "/images/banco-de-sangre/10.png",
+        "/images/banco-de-sangre/11.png",
+        "/images/banco-de-sangre/12.png",
+        "/images/banco-de-sangre/13.png",
+        "/images/banco-de-sangre/14.png",
+        "/images/banco-de-sangre/15.png",
+        "/images/banco-de-sangre/16.png",
+        "/images/banco-de-sangre/17.png",
+        "/images/banco-de-sangre/18.png",
+        "/images/banco-de-sangre/19.png",
+        "/images/banco-de-sangre/20.png",
+        "/images/banco-de-sangre/21.png",
+        "/images/banco-de-sangre/22.png",
+        "/images/banco-de-sangre/23.png",
+        "/images/banco-de-sangre/24.png",
+        "/images/banco-de-sangre/25.png",
+        "/images/banco-de-sangre/26.png",
+        "/images/banco-de-sangre/27.png"
+      ]
+    },
+    {
+      "id": "jala-u-social-content-manager",
+      "title": "Jala U Social Content Manager",
+      "description": "Content management tool created as Jala University Brand Ambassador to organize and schedule social media posts. Uploads media to Cloudinary CDN, uses Supabase PostgreSQL database. Dual user system: admin and reviewer. Features creation/editing/deletion of planned content for LinkedIn and Instagram, with near-real previews. Includes calendar export to PDF in aesthetic format with clickable links. Reviewers can add comments but cannot modify content. Statistics for content planned by week, month, etc.",
+      "image": "/images/jala-u-social-content-manager/main.png",
+      "technologies": [
+        "React",
+        "JavaScript",
+        "Vite",
+        "TailwindCSS",
+        "Supabase",
+        "PostgreSQL",
+        "Cloudinary"
+      ],
+      "category": ["Frontend"],
+      "git": "url",
+      "demo": "url",
+      "docs": "url",
+      "team": false,
+      "features": [
+        "Dual user roles: admin and reviewer",
+        "Content planning for social media platforms",
+        "Media upload and CDN integration",
+        "Calendar export with PDF generation",
+        "Content previews and commenting system",
+        "Statistics and analytics dashboard"
+      ],
+      "private": true,
+      "deployed": false,
+      "screenshots": [
+        "/images/jala-u-social-content-manager/1.png",
+        "/images/jala-u-social-content-manager/2.png",
+        "/images/jala-u-social-content-manager/3.png",
+        "/images/jala-u-social-content-manager/4.png",
+        "/images/jala-u-social-content-manager/5.png",
+        "/images/jala-u-social-content-manager/6.png",
+        "/images/jala-u-social-content-manager/7.png",
+        "/images/jala-u-social-content-manager/8.png",
+        "/images/jala-u-social-content-manager/9.png",
+        "/images/jala-u-social-content-manager/10.png",
+        "/images/jala-u-social-content-manager/11.png",
+        "/images/jala-u-social-content-manager/12.png",
+        "/images/jala-u-social-content-manager/13.png",
+        "/images/jala-u-social-content-manager/14.png",
+        "/images/jala-u-social-content-manager/15.png"
+      ]
+    },
+    {
+      "id": "bubu-and-dudu-books-website",
+      "title": "Bubu and Dudu Books Website",
+      "description": "Charming website promoting Peruvian writer Max Brayan's books about the cute bears Bubu and Dudu (from an Asian animation). Frontend project with internationalization support (/en and /es routes) using i18n. Built with Astro and file-based routing, styled with TailwindCSS.",
+      "image": "/images/bubu-and-dudu-books-website/main.png",
+      "technologies": ["Astro", "TailwindCSS", "i18n"],
+      "category": ["Frontend"],
+      "git": "url",
+      "demo": "https://max-brayan-bubu-dudu.netlify.app/en/",
+      "docs": "url",
+      "team": false,
+      "features": [
+        "Internationalization with English and Spanish routes",
+        "Promotional website for children's books",
+        "File-based routing with Astro",
+        "Responsive design with TailwindCSS",
+        "Focus on cute bear characters and animation"
+      ],
+      "private": true,
+      "deployed": true,
+      "screenshots": [
+        "/images/bubu-and-dudu-books-website/main.png",
+        "/images/bubu-and-dudu-books-website/1.png",
+        "/images/bubu-and-dudu-books-website/2.png",
+        "/images/bubu-and-dudu-books-website/3.png",
+        "/images/bubu-and-dudu-books-website/4.png",
+        "/images/bubu-and-dudu-books-website/5.png",
+        "/images/bubu-and-dudu-books-website/6.png",
+        "/images/bubu-and-dudu-books-website/7.png",
+        "/images/bubu-and-dudu-books-website/8.png",
+        "/images/bubu-and-dudu-books-website/9.png",
+        "/images/bubu-and-dudu-books-website/10.png",
+        "/images/bubu-and-dudu-books-website/11.png",
+        "/images/bubu-and-dudu-books-website/12.png",
+        "/images/bubu-and-dudu-books-website/13.png",
+        "/images/bubu-and-dudu-books-website/14.png",
+        "/images/bubu-and-dudu-books-website/15.png",
+        "/images/bubu-and-dudu-books-website/16.png",
+        "/images/bubu-and-dudu-books-website/17.png"
+      ]
+    },
+    {
+      "id": "exercise-tracker",
+      "title": "Exercise Tracker",
+      "description": "Mobile application built with Expo, React Native, and React Native StyleSheet API for tracking daily exercise routines. Uses SQLite for data storage and Zustand for state management. Features statistics for week and month, ability to install as APK on Android, import/export data, handling different sports, etc. Personal tool for fitness tracking.",
+      "image": "/images/exercise-tracker/main.png",
+      "technologies": ["Expo", "React Native", "SQLite", "Zustand"],
+      "category": ["Mobile"],
+      "git": "url",
+      "demo": "url",
+      "docs": "url",
+      "team": false,
+      "features": [
+        "Daily exercise routine tracking",
+        "Statistics for week and month views",
+        "Data import and export functionality",
+        "Multi-sport support",
+        "Local SQLite database",
+        "APK installation for Android"
+      ],
+      "private": true,
+      "deployed": false,
+      "screenshots": [
+        "/images/exercise-tracker/1.jpeg",
+        "/images/exercise-tracker/2.jpeg",
+        "/images/exercise-tracker/3.jpeg",
+        "/images/exercise-tracker/4.jpeg",
+        "/images/exercise-tracker/5.jpeg",
+        "/images/exercise-tracker/6.jpeg",
+        "/images/exercise-tracker/7.jpeg",
+        "/images/exercise-tracker/8.jpeg",
+        "/images/exercise-tracker/9.jpeg",
+        "/images/exercise-tracker/9.1.jpeg",
+        "/images/exercise-tracker/10.jpeg",
+        "/images/exercise-tracker/11.jpeg",
+        "/images/exercise-tracker/12.jpeg",
+        "/images/exercise-tracker/13.jpeg",
+        "/images/exercise-tracker/14.jpeg",
+        "/images/exercise-tracker/15.jpeg",
+        "/images/exercise-tracker/16.jpeg",
+        "/images/exercise-tracker/17.jpeg",
+        "/images/exercise-tracker/18.jpeg",
+        "/images/exercise-tracker/19.jpeg",
+        "/images/exercise-tracker/20.jpeg",
+        "/images/exercise-tracker/21.jpeg",
+        "/images/exercise-tracker/22.jpeg",
+        "/images/exercise-tracker/23.jpeg",
+        "/images/exercise-tracker/24.jpeg",
+        "/images/exercise-tracker/25.jpeg",
+        "/images/exercise-tracker/26.jpeg",
+        "/images/exercise-tracker/27.jpeg",
+        "/images/exercise-tracker/28.jpeg",
+        "/images/exercise-tracker/29.jpeg",
+        "/images/exercise-tracker/30.jpeg",
+        "/images/exercise-tracker/31.jpeg",
+        "/images/exercise-tracker/32.jpeg",
+        "/images/exercise-tracker/33.jpeg",
+        "/images/exercise-tracker/34.jpeg",
+        "/images/exercise-tracker/35.jpeg",
+        "/images/exercise-tracker/36.jpeg",
+        "/images/exercise-tracker/37.png"
+      ]
+    },
+    {
+      "id": "my-reading-town",
+      "title": "My Reading Town",
+      "description": "A 2D mobile city-building game developed with Flutter, Dart, and the Flame engine that gamifies real-world reading habits. Players earn resources (coins, gems, wood, metal) by logging book pages read, which are spent to construct buildings (houses, parks, hospitals, water and electricity plants, decorations) that fulfill the needs of their animal villagers (cats, rabbits, dogs). Each inhabitant displays emotional states with speech bubbles showing unmet needs or their favorite author when happy. Includes mini-games (guess the author, match the book character with their description) that reward special time-limited power-ups: an extra builder (1 hour), double construction speed (1 day), or an instant happiness boost for any villager (1 day). Features a branched mission system (construction, villager, and reading branches), land expansion with gems/coins, construction acceleration with gems, an advanced reading log with book search (internet or manual entry) and statistics, an experience system, and full localization in 5 languages (EN/ES/PT/FR/IT). Inspired by Clash of Clans, reimagined to encourage younger generations to build real reading habits.",
+      "image": "/images/my-reading-town/main.png",
+      "technologies": ["Flutter", "Dart", "Flame", "SQLite"],
+      "category": ["Mobile"],
+      "git": "url",
+      "demo": "url",
+      "docs": "url",
+      "team": false,
+      "features": [
+        "Resource economy tied to real reading: earn coins, gems, wood, and metal by logging book pages",
+        "Villager happiness system with emotional states, speech bubbles, needs display, and favorite author quotes",
+        "Mini-games (author guessing, book character matching) with time-limited power-up rewards",
+        "Branched mission system across construction, villager, and reading progression tracks",
+        "Advanced reading log with internet book search, manual entry, reading statistics, and history",
+        "Localization in 5 languages: English, Spanish, Portuguese, French, and Italian"
+      ],
+      "private": true,
+      "deployed": false,
+      "screenshots": [
+        "/images/my-reading-town/1.jpeg",
+        "/images/my-reading-town/2.jpeg",
+        "/images/my-reading-town/3.jpeg",
+        "/images/my-reading-town/4.jpeg",
+        "/images/my-reading-town/5.jpeg",
+        "/images/my-reading-town/6.jpeg",
+        "/images/my-reading-town/7.jpeg",
+        "/images/my-reading-town/8.jpeg",
+        "/images/my-reading-town/9.jpeg",
+        "/images/my-reading-town/10.jpeg",
+        "/images/my-reading-town/11.jpeg",
+        "/images/my-reading-town/12.jpeg",
+        "/images/my-reading-town/13.jpeg",
+        "/images/my-reading-town/14.jpeg",
+        "/images/my-reading-town/15.jpeg",
+        "/images/my-reading-town/16.jpeg",
+        "/images/my-reading-town/17.jpeg",
+        "/images/my-reading-town/18.jpeg",
+        "/images/my-reading-town/19.jpeg",
+        "/images/my-reading-town/20.jpeg",
+        "/images/my-reading-town/21.jpeg",
+        "/images/my-reading-town/22.jpeg",
+        "/images/my-reading-town/23.jpeg",
+        "/images/my-reading-town/24.jpeg",
+        "/images/my-reading-town/25.jpeg",
+        "/images/my-reading-town/26.jpeg",
+        "/images/my-reading-town/27.jpeg",
+        "/images/my-reading-town/28.jpeg",
+        "/images/my-reading-town/29.jpeg",
+        "/images/my-reading-town/30.jpeg",
+        "/images/my-reading-town/31.jpeg",
+        "/images/my-reading-town/32.jpeg",
+        "/images/my-reading-town/33.jpeg"
       ]
     },
     {
@@ -377,7 +992,7 @@
       "image": "/images/crowdsourced-ideation/main.png",
       "technologies": ["Spring", "ASP.NET Core", "MySQL", "MongoDB"],
       "category": ["Backend"],
-      "gitlab": "url",
+      "git": "url",
       "demo": "url",
       "docs": "url",
       "team": true,
@@ -400,7 +1015,7 @@
       "image": "/images/snacks-api/main.png",
       "technologies": ["Express.js", "MySQL", "Docker", "GCP"],
       "category": ["Backend"],
-      "gitlab": "https://gitlab.com/FernandoPinto1406/snacks-api",
+      "git": "https://gitlab.com/FernandoPinto1406/snacks-api",
       "demo": "url",
       "docs": "url",
       "team": false,
@@ -420,8 +1035,8 @@
       "description": "Comprehensive testing automation framework developed with Cucumber.js for systematic validation of Spotify's official API endpoints and functionality.",
       "image": "/images/spotify-api-testing/main.png",
       "technologies": ["Cucumber.js", "JavaScript", "Postman"],
-      "category": ["QA", "Testing"],
-      "gitlab": "https://gitlab.com/FernandoPinto1406/spotify-api-testing",
+      "category": ["QA"],
+      "git": "https://gitlab.com/FernandoPinto1406/spotify-api-testing",
       "demo": "url",
       "docs": "url",
       "team": true,
@@ -443,13 +1058,40 @@
       ]
     },
     {
+      "id": "space-invaders",
+      "title": "Space Invaders",
+      "description": "A classic Space Invaders game developed in C# as part of Programming 3 coursework, implementing advanced OOP principles and two-way data binding for real-time user interactions.",
+      "image": "/images/space-invaders/main.png",
+      "technologies": ["UNO Platform", "C#", ".NET 9"],
+      "category": ["Desktop"],
+      "git": "https://gitlab.com/FernandoPinto1406/spaceinvaders",
+      "demo": "url",
+      "docs": "url",
+      "team": false,
+      "features": [
+        "Object-oriented programming with advanced design patterns (e.g., Singleton, Factory, Strategy, Composite patterns)",
+        "Interactive gameplay with scoring system",
+        "Two-way data binding for dynamic UI updates"
+      ],
+      "private": false,
+      "deployed": false,
+      "screenshots": [
+        "/images/space-invaders/main.png",
+        "/images/space-invaders/1.png",
+        "/images/space-invaders/2.png",
+        "/images/space-invaders/3.png",
+        "/images/space-invaders/4.png",
+        "/images/space-invaders/5.png"
+      ]
+    },
+    {
       "id": "sorting-algorithm-visualizer",
       "title": "Sorting Algorithm Visualizer",
       "description": "Desktop application for real-time visualization of sorting algorithms, developed with Java Swing and implementing advanced object-oriented programming principles and design patterns.",
       "image": "/images/sorting-algorithm-visualizer/main.png",
       "technologies": ["Java Swing", "Java"],
       "category": ["Desktop", "CLI"],
-      "gitlab": "https://gitlab.com/FernandoPinto1406/sav",
+      "git": "https://gitlab.com/FernandoPinto1406/sav",
       "demo": "https://sorting-visualizer-demo.vercel.app",
       "docs": "url",
       "team": false,
@@ -475,7 +1117,7 @@
       "image": "/images/game2d/main.png",
       "technologies": ["Java Swing", "Java"],
       "category": ["Desktop"],
-      "gitlab": "https://gitlab.com/FernandoPinto1406/game2d",
+      "git": "https://gitlab.com/FernandoPinto1406/game2d",
       "demo": "url",
       "docs": "url",
       "team": false,
@@ -494,6 +1136,31 @@
         "/images/game2d/4.png",
         "/images/game2d/5.png",
         "/images/game2d/6.png"
+      ]
+    },
+    {
+      "id": "say2you",
+      "title": "Say2You",
+      "description": "Real-time chat application CLI developed with C#, featuring comprehensive messaging capabilities, contact management, and group channels through MQTT protocol implementation.",
+      "image": "/images/say2you/main.png",
+      "technologies": ["C#", "Mosquitto", "PostgreSQL", "Docker"],
+      "category": ["CLI"],
+      "git": "https://gitlab.com/say2you/say2you-client",
+      "demo": "url",
+      "docs": "url",
+      "team": false,
+      "features": [
+        "Advanced messaging system with MQTT real-time communication.",
+        "Contact and Group management system with registration and deletion capabilities.",
+        "Secure message encryption and user authentication."
+      ],
+      "private": false,
+      "deployed": false,
+      "screenshots": [
+        "/images/say2you/1.png",
+        "/images/say2you/2.png",
+        "/images/say2you/3.png",
+        "/images/say2you/4.png"
       ]
     }
   ],
@@ -516,7 +1183,7 @@
       },
       {
         "name": "TypeScript",
-        "level": 5,
+        "level": 6,
         "description": "Type-safe development with advanced patterns and configurations."
       },
       {
@@ -526,7 +1193,7 @@
       },
       {
         "name": "C++",
-        "level": 4,
+        "level": 3,
         "description": "System-level programming in IoT projects, focusing on efficient code for microcontrollers and sensor control."
       }
     ],
@@ -543,8 +1210,13 @@
       },
       {
         "name": "Vanilla JS",
-        "level": 6,
+        "level": 5,
         "description": "Responsive design, modern CSS features, and cross-browser compatibility."
+      },
+      {
+        "name": "Astro",
+        "level": 2,
+        "description": "Static site framework focused on performance and content-driven websites."
       },
       {
         "name": "Vue.js",
@@ -565,44 +1237,49 @@
       },
       {
         "name": "Spring",
-        "level": 6,
+        "level": 5,
         "description": "Microservices architecture, security, and database integration."
       },
       {
+        "name": "NestJS",
+        "level": 4,
+        "description": "Scalable Node.js framework with modular architecture and TypeScript support."
+      },
+      {
         "name": "Django",
-        "level": 5,
+        "level": 4,
         "description": "Rapid web development with ORM and admin interface."
       }
     ],
     "databases": [
       {
         "name": "MongoDB",
-        "level": 9,
+        "level": 8,
         "description": "Document-based applications and aggregation pipelines."
       },
       {
         "name": "SQL Server",
-        "level": 8,
+        "level": 6,
         "description": "Enterprise database solutions and stored procedures."
       },
       {
         "name": "MySQL",
-        "level": 8,
+        "level": 6,
         "description": "Relational database design and query optimization."
       },
       {
         "name": "PostgreSQL",
-        "level": 7,
+        "level": 6,
         "description": "Complex queries, performance tuning, and database design."
       },
       {
         "name": "Redis",
-        "level": 6,
+        "level": 4,
         "description": "Caching strategies and session management."
       },
       {
         "name": "ChromaDB",
-        "level": 5,
+        "level": 3,
         "description": "Vector databases for AI applications."
       }
     ],
@@ -613,7 +1290,7 @@
         "description": "Containerization, multi-container architectures, and custom images."
       },
       {
-        "name": "CI/CD",
+        "name": "GitLab CI/CD",
         "level": 10,
         "description": "GitLab CI/CD, automated testing, and multi-environment deployments."
       },
@@ -626,6 +1303,16 @@
         "name": "GCP",
         "level": 8,
         "description": "Cloud deployments and infrastructure management."
+      },
+      {
+        "name": "Ansible",
+        "level": 5,
+        "description": "Automation tool for configuration management and deployment tasks."
+      },
+      {
+        "name": "Terraform",
+        "level": 4,
+        "description": "Infrastructure as code tool for provisioning and managing cloud resources."
       }
     ]
   }
