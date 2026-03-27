@@ -1,4 +1,4 @@
-import { Mail, Github, Linkedin } from "lucide-react";
+import { Mail, Github, GitBranch, Linkedin } from "lucide-react";
 
 const Footer = ({ personal }) => {
   return (
@@ -18,6 +18,14 @@ const Footer = ({ personal }) => {
             className="p-3 bg-gray-700/50 hover:bg-blue-600/50 rounded-full transition-all duration-300 hover:scale-110"
           >
             <Github className="w-6 h-6 text-blue-400" />
+          </a>
+          <a
+            href={personal.gitlab}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-3 bg-gray-700/50 hover:bg-blue-600/50 rounded-full transition-all duration-300 hover:scale-110"
+          >
+            <GitBranch className="w-6 h-6 text-blue-400" />
           </a>
           <a
             href={personal.linkedin}

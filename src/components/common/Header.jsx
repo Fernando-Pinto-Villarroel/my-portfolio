@@ -1,4 +1,11 @@
-import { Mail, Github, Linkedin, MapPin, Rocket } from "lucide-react";
+import {
+  Mail,
+  Github,
+  GitBranch,
+  Linkedin,
+  MapPin,
+  Rocket,
+} from "lucide-react";
 import GradientText from "./GradientText";
 
 const Header = ({ personal }) => {
@@ -19,28 +26,40 @@ const Header = ({ personal }) => {
           </p>
         </div>
 
-        <div className="flex flex-wrap justify-center gap-3 sm:gap-4 mb-10">
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 mb-10 w-fit mx-auto">
           <a
             href={`mailto:${personal.email}`}
-            className="flex items-center gap-2 px-4 sm:px-6 py-2.5 sm:py-3 bg-gray-800/50 backdrop-blur-sm border border-gray-700/50 rounded-full hover:border-blue-500/50 transition-all duration-300 hover:scale-105 text-sm sm:text-base"
+            className="flex items-center justify-center gap-2 px-4 sm:px-6 py-2.5 sm:py-3 bg-gray-800/50 backdrop-blur-sm border border-gray-700/50 rounded-full hover:border-blue-500/50 transition-all duration-300 hover:scale-105 text-sm sm:text-base"
           >
             <Mail className="w-4 h-4 sm:w-5 sm:h-5 text-blue-400" />
             <span>Contact</span>
           </a>
+
           <a
             href={personal.github}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 px-4 sm:px-6 py-2.5 sm:py-3 bg-gray-800/50 backdrop-blur-sm border border-gray-700/50 rounded-full hover:border-blue-500/50 transition-all duration-300 hover:scale-105 text-sm sm:text-base"
+            className="flex items-center justify-center gap-2 px-4 sm:px-6 py-2.5 sm:py-3 bg-gray-800/50 backdrop-blur-sm border border-gray-700/50 rounded-full hover:border-blue-500/50 transition-all duration-300 hover:scale-105 text-sm sm:text-base"
           >
             <Github className="w-4 h-4 sm:w-5 sm:h-5 text-blue-400" />
             <span>GitHub</span>
           </a>
+
+          <a
+            href={personal.gitlab}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center gap-2 px-4 sm:px-6 py-2.5 sm:py-3 bg-gray-800/50 backdrop-blur-sm border border-gray-700/50 rounded-full hover:border-blue-500/50 transition-all duration-300 hover:scale-105 text-sm sm:text-base"
+          >
+            <GitBranch className="w-4 h-4 sm:w-5 sm:h-5 text-blue-400" />
+            <span>GitLab</span>
+          </a>
+
           <a
             href={personal.linkedin}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 px-4 sm:px-6 py-2.5 sm:py-3 bg-gray-800/50 backdrop-blur-sm border border-gray-700/50 rounded-full hover:border-blue-500/50 transition-all duration-300 hover:scale-105 text-sm sm:text-base"
+            className="flex items-center justify-center gap-2 px-4 sm:px-6 py-2.5 sm:py-3 bg-gray-800/50 backdrop-blur-sm border border-gray-700/50 rounded-full hover:border-blue-500/50 transition-all duration-300 hover:scale-105 text-sm sm:text-base"
           >
             <Linkedin className="w-4 h-4 sm:w-5 sm:h-5 text-blue-400" />
             <span>LinkedIn</span>
