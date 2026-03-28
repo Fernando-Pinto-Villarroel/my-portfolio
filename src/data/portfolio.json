@@ -3,7 +3,7 @@
     "name": "Fernando Pinto Villarroel",
     "title": "Software Engineer & Linguist",
     "subtitle": "Navigating the tech universe through hands-on projects and creative solutions.",
-    "bio": "Passionate Software Engineering student with experience in full-stack development. I bring together technical precision with linguistic understanding to create innovative solutions. Currently pursuing my degree while building scalable applications and exploring the intersection of technology and human communication.",
+    "bio": "Software Engineer with 4 years of hands-on experience in full-stack development. I bring together technical precision with linguistic understanding to create innovative solutions. Currently pursuing my degree while building scalable applications and exploring the intersection of technology and human communication.",
     "location": "Cochabamba, Bolivia",
     "email": "ferpintovillarroel1406@gmail.com",
     "github": "https://github.com/Fernando-Pinto-Villarroel",
@@ -874,9 +874,9 @@
       "image": "/images/exercise-tracker/main.png",
       "technologies": ["Expo", "React Native", "SQLite", "Zustand"],
       "category": ["Mobile"],
-      "git": "url",
+      "git": "https://github.com/Fernando-Pinto-Villarroel/exercise-tracker",
       "demo": "url",
-      "docs": "url",
+      "docs": "https://github.com/Fernando-Pinto-Villarroel/exercise-tracker/blob/main/README.md",
       "team": false,
       "features": [
         "Daily exercise routine tracking",
@@ -886,7 +886,7 @@
         "Local SQLite database",
         "APK installation for Android"
       ],
-      "private": true,
+      "private": false,
       "deployed": false,
       "screenshots": [
         "/images/exercise-tracker/1.jpeg",
@@ -936,9 +936,9 @@
       "image": "/images/my-reading-town/main.png",
       "technologies": ["Flutter", "Dart", "Flame", "SQLite"],
       "category": ["Mobile"],
-      "git": "url",
+      "git": "https://github.com/Fernando-Pinto-Villarroel/my-reading-town",
       "demo": "url",
-      "docs": "url",
+      "docs": "https://github.com/Fernando-Pinto-Villarroel/my-reading-town/blob/main/README.md",
       "team": false,
       "features": [
         "Resource economy tied to real reading: earn coins, gems, wood, and metal by logging book pages",
@@ -948,7 +948,7 @@
         "Advanced reading log with internet book search, manual entry, reading statistics, and history",
         "Localization in 5 languages: English, Spanish, Portuguese, French, and Italian"
       ],
-      "private": true,
+      "private": false,
       "deployed": false,
       "screenshots": [
         "/images/my-reading-town/1.jpeg",
