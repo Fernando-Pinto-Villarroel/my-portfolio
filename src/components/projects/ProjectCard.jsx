@@ -107,7 +107,7 @@ const ProjectCard = ({ project }) => {
             {project.description}
           </p>
 
-          <div className="flex flex-wrap gap-2 mb-4 flex-shrink-0 min-h-[60px] max-h-[60px] overflow-hidden">
+          <div className="flex flex-wrap gap-2 mb-4 flex-shrink-0 min-h-[65px] max-h-[65px] overflow-hidden">
             {project.technologies.map((tech, index) => (
               <span
                 key={index}
