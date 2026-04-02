@@ -21,7 +21,7 @@
     {
       "id": "paperless-ngx-microservices-migration",
       "title": "Paperless-NGX Microservices Migration",
-      "description": "Comprehensive migration of the open-source Paperless-NGX legacy monolithic system to a scalable microservices architecture. The legacy system (monolithic with OCR, Search modules, and AngularJS frontend) is gradually modernized using the Strangler Fig pattern with ACL (Anti-Corruption Layer) for seamless integration. Key microservices include OCR (with PostgreSQL) and Search (with Elasticsearch). Modern architecture supports millions of users, featuring a React SPA frontend with TypeScript, Vite, Zustand, and Tanstack Router; API Gateway using Ocelot in C# ASP.NET Core; OCR and Search microservices in C# and TypeScript respectively; RabbitMQ for event-driven communication; and bidirectional synchronization via ACL background service. This is the most complete full-stack project, incorporating observability with LGTM and Sentry, Docker deployment, and Supabase CDN.",
+      "description": "Migration of the open-source Paperless-NGX legacy monolithic system to a scalable microservices architecture. The legacy system (monolithic with OCR, Search modules, and AngularJS frontend) is gradually modernized using the Strangler Fig pattern with ACL (Anti-Corruption Layer) for seamless integration. Key microservices include OCR (with PostgreSQL) and Search (with Elasticsearch). Modern architecture supports millions of users, featuring a React SPA frontend with TypeScript, Vite, Zustand, and Tanstack Router; API Gateway using Ocelot in C# ASP.NET Core; OCR and Search microservices in C# and TypeScript respectively; RabbitMQ for event-driven communication; and bidirectional synchronization via ACL background service. This is the most complete full-stack project, incorporating observability with LGTM and Sentry, Docker deployment, and Supabase CDN.",
       "image": "/images/paperless-ngx-microservices-migration/main.png",
       "technologies": [
         "React",
@@ -51,7 +51,7 @@
         "Scalable architecture with independent microservices",
         "Event-driven communication with RabbitMQ",
         "Modern React SPA with advanced state management",
-        "Comprehensive observability and deployment tools"
+        "Observability and deployment tools"
       ],
       "private": true,
       "deployed": false,
@@ -64,7 +64,7 @@
     {
       "id": "battle-tanks",
       "title": "Battle Tanks",
-      "description": "Real-time multiplayer game replicating the classic Battle Tanks experience. Built as a full-stack application with Angular frontend using SignalR store for state management, and C# ASP.NET Core backend implementing CQRS pattern with MediatR. Features hexagonal architecture in backend and feature-based architecture in frontend. Real-time communication via MQTT for secondary features (chat, powerups) and SignalR for core gameplay (movement, shooting, collisions). Implements professional database practices including sharding, partitioning, and replication with PostgreSQL, plus Redis caching for GET endpoints. Docker infrastructure. Comprehensive testing suite with Apache JMeter, Postman, K6, and more. Focus on real-time performance and scalability for concurrent users. Includes additional Angular Map Creator tool for advanced map design with JSON import/export and tile editing.",
+      "description": "Real-time multiplayer game replicating the classic Battle Tanks experience. Built as a full-stack application with Angular frontend using SignalR store for state management, and C# ASP.NET Core backend implementing CQRS pattern with MediatR. Features hexagonal architecture in backend and feature-based architecture in frontend. Real-time communication via MQTT for secondary features (chat, powerups) and SignalR for core gameplay (movement, shooting, collisions). Implements professional database practices including sharding, partitioning, and replication with PostgreSQL, plus Redis caching for GET endpoints. Docker infrastructure. Testing suite with Apache JMeter, Postman, K6, and more. Focus on real-time performance and scalability for concurrent users. Includes additional Angular Map Creator tool for advanced map design with JSON import/export and tile editing.",
       "image": "/images/battle-tanks/main.png",
       "technologies": [
         "Angular",
@@ -187,7 +187,7 @@
     {
       "id": "booking-system",
       "title": "Booking Management System",
-      "description": "Enterprise-level booking system with advanced reservation management, reactive forms, comprehensive validations, and role-based access control for scalable business operations.",
+      "description": "Enterprise-level booking system with advanced reservation management, reactive forms, validations, and role-based access control for scalable business operations.",
       "image": "/images/booking-system/main.png",
       "technologies": [
         "Angular",
@@ -203,7 +203,7 @@
       "docs": "url",
       "team": true,
       "features": [
-        "Reactive forms with comprehensive input validations.",
+        "Reactive forms with input validations.",
         "Role-based access control with multiple permission levels.",
         "Enterprise-grade security and data protection measures."
       ],
@@ -482,7 +482,7 @@
     {
       "id": "home-mapper",
       "title": "Home Mapper",
-      "description": "Interactive web application for visualizing forest fires in Bolivia with real-time data processing, geospatial analysis, and NASA API integration for comprehensive wildfire monitoring.",
+      "description": "Interactive web application for visualizing forest fires in Bolivia with real-time data processing, geospatial analysis, and NASA API integration for wildfire monitoring.",
       "image": "/images/home-mapper/main.png",
       "technologies": ["React", "Spring", "Docker", "GCP"],
       "category": ["Full-Stack"],
@@ -528,7 +528,7 @@
         "LLM integration for pollution explanations",
         "Multi-API data integration and cleaning",
         "Self-retraining prediction system",
-        "Comprehensive analytics and news platform"
+        "Analytics and news platform"
       ],
       "private": true,
       "deployed": true,
@@ -647,7 +647,7 @@
     {
       "id": "tongue-pathology",
       "title": "Tongue Pathology Detector",
-      "description": "AI-powered medical application for real-time tongue pathology detection using advanced machine learning models and comprehensive image processing algorithms.",
+      "description": "AI-powered medical application for real-time tongue pathology detection using advanced machine learning models and image processing algorithms.",
       "image": "/images/tongue-pathology/main.png",
       "technologies": [
         "Vanilla JavaScript",
@@ -989,7 +989,7 @@
     {
       "id": "crowdsourced-ideation",
       "title": "Crowdsourced Ideation Solution API",
-      "description": "Multi-language API system developed in Java and C# for comprehensive user management and content publishing, featuring advanced database migration strategies from SQL to NoSQL.",
+      "description": "Multi-language API system developed in Java and C# for user management and content publishing, featuring advanced database migration strategies from SQL to NoSQL.",
       "image": "/images/crowdsourced-ideation/main.png",
       "technologies": ["Spring", "ASP.NET Core", "MySQL", "MongoDB"],
       "category": ["Backend"],
@@ -1012,7 +1012,7 @@
     {
       "id": "snacks-api",
       "title": "Snacks API",
-      "description": "Comprehensive API solution for institutional snack management using QR code integration, designed to handle registered user validation and prevent duplicate claims during events.",
+      "description": "API solution for institutional snack management using QR code integration, designed to handle registered user validation and prevent duplicate claims during events.",
       "image": "/images/snacks-api/main.png",
       "technologies": ["Express.js", "MySQL", "Docker", "GCP"],
       "category": ["Backend"],
@@ -1033,7 +1033,7 @@
     {
       "id": "spotify-api-testing",
       "title": "Spotify API Testing Automation Framework",
-      "description": "Comprehensive testing automation framework developed with Cucumber.js for systematic validation of Spotify's official API endpoints and functionality.",
+      "description": "Testing automation framework developed with Cucumber.js for systematic validation of Spotify's official API endpoints and functionality.",
       "image": "/images/spotify-api-testing/main.png",
       "technologies": ["Cucumber.js", "JavaScript", "Postman"],
       "category": ["QA"],
@@ -1043,7 +1043,7 @@
       "team": true,
       "features": [
         "Behavior-driven development with Cucumber.js framework.",
-        "Comprehensive API endpoint testing and validation.",
+        "API endpoint testing and validation.",
         "Automated test suite for Spotify's official API functionality.",
         "Advanced reporting and test result analysis.",
         "Continuous integration support for automated testing workflows."
@@ -1142,7 +1142,7 @@
     {
       "id": "say2you",
       "title": "Say2You",
-      "description": "Real-time chat application CLI developed with C#, featuring comprehensive messaging capabilities, contact management, and group channels through MQTT protocol implementation.",
+      "description": "Real-time chat application CLI developed with C#, featuring messaging capabilities, contact management, and group channels through MQTT protocol implementation.",
       "image": "/images/say2you/main.png",
       "technologies": ["C#", "Mosquitto", "PostgreSQL", "Docker"],
       "category": ["CLI"],
