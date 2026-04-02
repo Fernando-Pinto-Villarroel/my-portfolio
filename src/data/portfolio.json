@@ -1227,14 +1227,14 @@
     ],
     "backend": [
       {
-        "name": "Express.js",
-        "level": 8,
-        "description": "RESTful APIs, real-time communication, and middleware development."
-      },
-      {
         "name": "ASP.NET Core",
         "level": 7,
         "description": "Enterprise applications with advanced authentication and security."
+      },
+      {
+        "name": "Express.js",
+        "level": 6,
+        "description": "RESTful APIs, real-time communication, and middleware development."
       },
       {
         "name": "Spring",
