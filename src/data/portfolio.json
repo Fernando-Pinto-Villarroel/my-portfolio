@@ -271,7 +271,7 @@
       "category": ["Full-Stack", "IoT"],
       "git": "https://gitlab.com/lucifer-projects/warehouse-monitoring-system",
       "demo": "url",
-      "docs": "https://drive.google.com/file/d/1l26q5GokVfeNwZP2QXxdieNepp5Yw0Ev/view?usp=sharing",
+      "docs": "url",
       "team": true,
       "features": [
         "Real-time temperature and humidity detection with live dashboard visualization on both desktop and mobile devices.",
