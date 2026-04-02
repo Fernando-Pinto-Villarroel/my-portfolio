@@ -72,7 +72,7 @@ const ProjectModal = ({ project, isOpen, onClose, type }) => {
       return {
         title: "Private Repository",
         message:
-          "Unfortunately, this is a private repository that I cannot provide access to, but here are some screenshots of the project.",
+          "Unfortunately, this is a private repository that I cannot provide access to, but below are some screenshots of the project.",
         bgColor: "bg-yellow-500/20",
         borderColor: "border-yellow-500/30",
         textColor: "text-yellow-300",
@@ -82,7 +82,7 @@ const ProjectModal = ({ project, isOpen, onClose, type }) => {
       return {
         title: "Application Not Deployed",
         message:
-          "Unfortunately, this application is no longer deployed, but here are some screenshots of the project.",
+          "Unfortunately, this application is no longer deployed, but below are some screenshots of the project.",
         bgColor: "bg-red-500/20",
         borderColor: "border-red-500/30",
         textColor: "text-red-300",
@@ -92,7 +92,7 @@ const ProjectModal = ({ project, isOpen, onClose, type }) => {
       return {
         title: "Documentation Not Available",
         message:
-          "Unfortunately, the documentation for this project is not available yet, but here are some screenshots of the project.",
+          "Unfortunately, the documentation for this project is not available yet, but below are some screenshots of the project.",
         bgColor: "bg-blue-500/20",
         borderColor: "border-blue-500/30",
         textColor: "text-blue-300",
