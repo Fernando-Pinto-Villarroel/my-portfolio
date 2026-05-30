@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Github, Star, ExternalLink, FileText } from "lucide-react";
+import { Github, Star, ExternalLink, FileText, Users, GraduationCap } from "lucide-react";
 import ProjectModal from "./ProjectModal";
 
 const isVideo = (src) => /\.(mp4|webm|ogg|mov|avi)$/i.test(src || "");
@@ -79,6 +79,26 @@ const ProjectCard = ({ project }) => {
               </span>
             ))}
           </div>
+          {project.team && (
+            <div className="absolute bottom-3 left-3 z-20 group/team">
+              <div className="w-7 h-7 rounded-full bg-green-800/80 flex items-center justify-center">
+                <Users className="w-3.5 h-3.5 text-white" />
+              </div>
+              <div className="absolute bottom-full left-0 mb-1 px-2 py-1 bg-gray-900/90 text-white text-xs rounded whitespace-nowrap opacity-0 group-hover/team:opacity-100 transition-opacity duration-150 pointer-events-none">
+                Worked with Team
+              </div>
+            </div>
+          )}
+          {project.academic && (
+            <div className="absolute bottom-3 right-3 z-20 group/academic">
+              <div className="w-7 h-7 rounded-full bg-blue-800/80 flex items-center justify-center">
+                <GraduationCap className="w-3.5 h-3.5 text-white" />
+              </div>
+              <div className="absolute bottom-full right-0 mb-1 px-2 py-1 bg-gray-900/90 text-white text-xs rounded whitespace-nowrap opacity-0 group-hover/academic:opacity-100 transition-opacity duration-150 pointer-events-none">
+                Academic Project
+              </div>
+            </div>
+          )}
           <div className="flex items-center justify-center h-full">
             {isVideo(project.image) ? (
               <video

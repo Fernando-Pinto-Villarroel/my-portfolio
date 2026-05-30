@@ -8,6 +8,7 @@ import {
   FileText,
   ExternalLink,
   Play,
+  GraduationCap,
 } from "lucide-react";
 
 const isVideo = (src) => /\.(mp4|webm|ogg|mov|avi)$/i.test(src || "");
@@ -101,9 +102,9 @@ const ProjectModal = ({ project, isOpen, onClose, type }) => {
     }
     if (type === "docs") {
       return {
-        title: "Documentation Not Available",
+        title: "Public Documentation Not Available",
         message:
-          "Unfortunately, the documentation for this project is not available yet, but below are some screenshots of the project.",
+          "Unfortunately, public documentation for this project is not available yet, but below are some screenshots of the project.",
         bgColor: "bg-blue-500/20",
         borderColor: "border-blue-500/30",
         textColor: "text-blue-300",
@@ -113,6 +114,76 @@ const ProjectModal = ({ project, isOpen, onClose, type }) => {
   };
 
   const errorBanner = getErrorBanner();
+
+  const hasAcademicRepo = project.academic && project.private && project.git !== "url";
+  const hasAcademicDocs =
+    project.academic && project.docs === "url" && project.academic_docs;
+
+  const renderAcademicHint = (dark = false) => {
+    if (!hasAcademicRepo && !hasAcademicDocs) return null;
+    if (dark) {
+      return (
+        <p className="mt-3 text-sm text-blue-300/70 text-center flex items-center justify-center gap-1.5 flex-wrap">
+          <GraduationCap className="w-4 h-4 flex-shrink-0" />
+          <span>
+            If you have an institutional account from Jala University with the
+            right permissions you might be able to see the{" "}
+            {hasAcademicRepo && (
+              <a
+                href={project.git}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline underline-offset-2 hover:text-blue-200 transition-colors"
+              >
+                repository
+              </a>
+            )}
+            {hasAcademicRepo && hasAcademicDocs && " and "}
+            {hasAcademicDocs && (
+              <a
+                href={project.academic_docs}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline underline-offset-2 hover:text-blue-200 transition-colors"
+              >
+                documentation
+              </a>
+            )}
+          </span>
+        </p>
+      );
+    }
+    return (
+      <div className="mt-6 flex items-start gap-2 text-blue-400/80 text-sm">
+        <GraduationCap className="w-4 h-4 mt-0.5 flex-shrink-0" />
+        <p>
+          If you have an institutional account from Jala University with the
+          right permissions you might be able to see the{" "}
+          {hasAcademicRepo && (
+            <a
+              href={project.git}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline underline-offset-2 hover:text-blue-300 transition-colors"
+            >
+              repository
+            </a>
+          )}
+          {hasAcademicRepo && hasAcademicDocs && " and "}
+          {hasAcademicDocs && (
+            <a
+              href={project.academic_docs}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline underline-offset-2 hover:text-blue-300 transition-colors"
+            >
+              documentation
+            </a>
+          )}
+        </p>
+      </div>
+    );
+  };
 
   const renderResources = () => {
     if (errorBanner) {
@@ -137,7 +208,7 @@ const ProjectModal = ({ project, isOpen, onClose, type }) => {
                 className="flex items-center gap-2 px-4 py-2 bg-gray-700/50 hover:bg-gray-600/50 text-white rounded-lg transition-all duration-200 hover:scale-105 text-sm"
               >
                 <Github className="w-4 h-4" />
-                Git
+                Git Repo
               </a>
             )}
             {showDocs && (
@@ -181,7 +252,7 @@ const ProjectModal = ({ project, isOpen, onClose, type }) => {
               className="flex items-center gap-2 px-4 py-2 bg-gray-700/50 hover:bg-gray-600/50 text-white rounded-lg transition-all duration-200 hover:scale-105 text-sm"
             >
               <Github className="w-4 h-4" />
-              Git
+              Git Repo
             </a>
           ) : (
             <span className="flex items-center gap-2 px-4 py-2 bg-gray-800/50 text-gray-500 rounded-lg border border-gray-700/30 text-sm cursor-not-allowed">
@@ -202,7 +273,7 @@ const ProjectModal = ({ project, isOpen, onClose, type }) => {
           ) : (
             <span className="flex items-center gap-2 px-4 py-2 bg-gray-800/50 text-gray-500 rounded-lg border border-gray-700/30 text-sm cursor-not-allowed">
               <FileText className="w-4 h-4" />
-              No Documentation
+              No Public Documentation
             </span>
           )}
           {hasDemo ? (
@@ -222,6 +293,7 @@ const ProjectModal = ({ project, isOpen, onClose, type }) => {
             </span>
           )}
         </div>
+        {renderAcademicHint()}
       </div>
     );
   };
@@ -252,6 +324,12 @@ const ProjectModal = ({ project, isOpen, onClose, type }) => {
                   Team
                 </span>
               )}
+              {project.academic && (
+                <span className="px-2 py-0.5 bg-blue-900/40 text-blue-300 text-xs rounded-full border border-blue-500/40 flex items-center gap-1">
+                  <GraduationCap className="w-3 h-3" />
+                  Academic
+                </span>
+              )}
               {project.private && (
                 <span className="px-2 py-0.5 bg-yellow-500/30 text-yellow-300 text-xs rounded-full border border-yellow-500/30">
                   Private
@@ -263,6 +341,12 @@ const ProjectModal = ({ project, isOpen, onClose, type }) => {
                 </span>
               )}
             </div>
+            {project.team && project.team_role && (
+              <p className="text-sm text-gray-400 mt-2">
+                <span className="text-gray-500">Team Member Role:</span>{" "}
+                {project.team_role}
+              </p>
+            )}
           </div>
           <button
             onClick={onClose}
@@ -287,6 +371,7 @@ const ProjectModal = ({ project, isOpen, onClose, type }) => {
               >
                 {errorBanner.message}
               </p>
+              {renderAcademicHint(true)}
               {renderResources()}
             </div>
           ) : (
@@ -378,7 +463,10 @@ const ProjectModal = ({ project, isOpen, onClose, type }) => {
             </div>
 
             {project.screenshots.length > 1 && (
-              <div ref={stripRef} className="flex gap-2 overflow-x-auto px-1 py-1 pb-2 thumbnail-strip">
+              <div
+                ref={stripRef}
+                className="flex gap-2 overflow-x-auto px-1 py-1 pb-2 thumbnail-strip"
+              >
                 {project.screenshots.map((screenshot, index) => (
                   <button
                     key={index}
