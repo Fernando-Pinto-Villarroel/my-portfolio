@@ -1,4 +1,4 @@
-import { useState, useRef, useLayoutEffect } from "react";
+import { useState, useRef, useLayoutEffect, useEffect } from "react";
 import { Github, Star, ExternalLink, FileText, Users, GraduationCap } from "lucide-react";
 import ProjectModal from "./ProjectModal";
 
@@ -27,8 +27,10 @@ const ProjectCard = ({ project }) => {
   const [modalType, setModalType] = useState("");
   const techContainerRef = useRef(null);
   const [techVisibleCount, setTechVisibleCount] = useState(project.technologies.length);
+  const [needsMeasure, setNeedsMeasure] = useState(true);
 
   useLayoutEffect(() => {
+    if (!needsMeasure) return;
     const container = techContainerRef.current;
     if (!container) return;
     const containerBottom = container.getBoundingClientRect().bottom;
@@ -40,10 +42,24 @@ const ProjectCard = ({ project }) => {
         break;
       }
     }
-    if (firstOverflow < children.length) {
-      setTechVisibleCount(Math.max(1, firstOverflow - 1));
-    }
-  }, [project.id]);
+    setNeedsMeasure(false);
+    setTechVisibleCount(
+      firstOverflow < project.technologies.length
+        ? Math.max(1, firstOverflow - 1)
+        : project.technologies.length
+    );
+  });
+
+  useEffect(() => {
+    const container = techContainerRef.current;
+    if (!container) return;
+    const observer = new ResizeObserver(() => {
+      setTechVisibleCount(project.technologies.length);
+      setNeedsMeasure(true);
+    });
+    observer.observe(container);
+    return () => observer.disconnect();
+  }, [project.id, project.technologies.length]);
 
   const openModal = (type) => {
     setModalType(type);
@@ -158,7 +174,7 @@ const ProjectCard = ({ project }) => {
                 {tech}
               </span>
             ))}
-            {techVisibleCount < project.technologies.length && (
+            {!needsMeasure && techVisibleCount < project.technologies.length && (
               <span className="px-3 py-1 bg-blue-700/40 text-blue-300 text-xs rounded-full border border-blue-500/40 h-fit font-medium">
                 +{project.technologies.length - techVisibleCount}
               </span>
