@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { createPortal } from "react-dom";
 import {
   X,
@@ -11,6 +11,8 @@ import {
 } from "lucide-react";
 
 const isVideo = (src) => /\.(mp4|webm|ogg|mov|avi)$/i.test(src || "");
+const videoPoster = (src) => src?.replace(/\.[^.]+$/, "_poster.webp");
+const thumbSrc = (src) => src?.replace(/\.webp$/, "_thumb.webp");
 
 const getCategoryStyle = (category) => {
   const styles = {
@@ -32,6 +34,7 @@ const getCategoryStyle = (category) => {
 
 const ProjectModal = ({ project, isOpen, onClose, type }) => {
   const [selectedImage, setSelectedImage] = useState(0);
+  const stripRef = useRef(null);
 
   useEffect(() => {
     if (isOpen) {
@@ -44,6 +47,14 @@ const ProjectModal = ({ project, isOpen, onClose, type }) => {
       document.body.style.overflow = "unset";
     };
   }, [isOpen]);
+
+  useEffect(() => {
+    const strip = stripRef.current;
+    if (!strip) return;
+    const itemWidth = 96 + 8; // w-24 + gap-2
+    const scrollTarget = selectedImage * itemWidth - strip.clientWidth / 2 + 48;
+    strip.scrollTo({ left: Math.max(0, scrollTarget), behavior: "smooth" });
+  }, [selectedImage]);
 
   if (!isOpen) return null;
 
@@ -223,8 +234,8 @@ const ProjectModal = ({ project, isOpen, onClose, type }) => {
       className="fixed inset-0 bg-black/80 backdrop-blur-sm z-[9999] flex items-center justify-center p-4"
       onClick={handleBackdropClick}
     >
-      <div className="relative bg-gray-800/95 backdrop-blur-sm border border-gray-700/50 rounded-2xl max-w-6xl w-full max-h-[90vh] overflow-hidden">
-        <div className="sticky top-0 bg-gray-800/95 backdrop-blur-sm border-b border-gray-700/50 p-6 flex items-start justify-between gap-4">
+      <div className="relative bg-gray-800 border border-gray-700/50 rounded-2xl max-w-6xl w-full max-h-[90vh] overflow-clip">
+        <div className="sticky top-0 bg-gray-800 border-b border-gray-700/50 p-6 flex items-start justify-between gap-4">
           <div className="flex-1 min-w-0">
             <h2 className="text-2xl font-bold text-white">{project.title}</h2>
             <div className="flex flex-wrap gap-2 mt-2">
@@ -322,14 +333,17 @@ const ProjectModal = ({ project, isOpen, onClose, type }) => {
                   <video
                     key={mediaUrl}
                     src={mediaUrl}
+                    poster={`${import.meta.env.BASE_URL}${videoPoster(currentMedia)}`}
                     className="w-full h-full object-contain bg-black"
                     controls
                     playsInline
+                    preload="none"
                   />
                 ) : (
                   <img
                     src={mediaUrl}
                     alt={`${project.title} screenshot ${selectedImage + 1}`}
+                    decoding="sync"
                     className="w-full h-full object-contain"
                     onError={(e) => {
                       e.target.src =
@@ -338,7 +352,7 @@ const ProjectModal = ({ project, isOpen, onClose, type }) => {
                   />
                 )}
 
-                {project.screenshots.length > 1 && !isVideo(currentMedia) && (
+                {project.screenshots.length > 1 && (
                   <>
                     <button
                       onClick={prevImage}
@@ -354,23 +368,6 @@ const ProjectModal = ({ project, isOpen, onClose, type }) => {
                     </button>
                   </>
                 )}
-
-                {project.screenshots.length > 1 && isVideo(currentMedia) && (
-                  <>
-                    <button
-                      onClick={prevImage}
-                      className="absolute left-4 top-4 bg-black/50 hover:bg-black/70 text-white p-2 rounded-full transition-all duration-200"
-                    >
-                      <ChevronLeft className="w-5 h-5" />
-                    </button>
-                    <button
-                      onClick={nextImage}
-                      className="absolute right-4 top-4 bg-black/50 hover:bg-black/70 text-white p-2 rounded-full transition-all duration-200"
-                    >
-                      <ChevronRight className="w-5 h-5" />
-                    </button>
-                  </>
-                )}
               </div>
 
               <div className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-black/50 backdrop-blur-sm rounded-full px-3 py-1 pointer-events-none">
@@ -381,25 +378,24 @@ const ProjectModal = ({ project, isOpen, onClose, type }) => {
             </div>
 
             {project.screenshots.length > 1 && (
-              <div className="flex gap-2 overflow-x-auto pb-2">
+              <div ref={stripRef} className="flex gap-2 overflow-x-auto px-1 py-1 pb-2 thumbnail-strip">
                 {project.screenshots.map((screenshot, index) => (
                   <button
                     key={index}
                     onClick={() => setSelectedImage(index)}
-                    className={`relative flex-shrink-0 w-24 h-16 rounded-lg overflow-hidden border-2 transition-all duration-200 bg-gray-900 ${
+                    className={`relative flex-shrink-0 w-24 h-16 rounded-lg border-2 bg-gray-900 ${
                       selectedImage === index
-                        ? "border-blue-500 scale-105"
+                        ? "border-blue-500"
                         : "border-gray-600/50 hover:border-gray-500"
                     }`}
                   >
                     {isVideo(screenshot) ? (
-                      <div className="relative w-full h-full">
-                        <video
-                          src={`${import.meta.env.BASE_URL}${screenshot}#t=0.1`}
-                          className="w-full h-full object-contain"
-                          preload="metadata"
-                          muted
-                          playsInline
+                      <div className="relative w-full h-full rounded-md overflow-hidden">
+                        <img
+                          src={`${import.meta.env.BASE_URL}${videoPoster(screenshot)}`}
+                          alt={`${project.title} video thumbnail ${index + 1}`}
+                          decoding="sync"
+                          className="w-full h-full object-cover"
                         />
                         <div className="absolute inset-0 flex items-center justify-center bg-black/40">
                           <Play className="w-5 h-5 text-white drop-shadow-lg" />
@@ -407,12 +403,13 @@ const ProjectModal = ({ project, isOpen, onClose, type }) => {
                       </div>
                     ) : (
                       <img
-                        src={`${import.meta.env.BASE_URL}${screenshot}`}
+                        src={`${import.meta.env.BASE_URL}${thumbSrc(screenshot)}`}
                         alt={`${project.title} thumbnail ${index + 1}`}
+                        decoding="sync"
                         className="w-full h-full object-contain"
                         onError={(e) => {
                           e.target.src =
-                            "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOTYiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA5NiA2NCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9Ijk2IiBoZWlnaHQ9IjY0IiBmaWxsPSIjMzc0MTUxIi8+CjxjaXJjbGUgY3g9IjQ4IiBjeT0iMzIiIHI9IjEyIiBmaWxsPSIjNjM3NDhFIi8+Cjx0ZXh0IHg9IjQ4IiB5PSI1MCIgZmlsbD0iIzlDQTNBRiIgZm9udC1mYW1pbHk9IkFyaWFsIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9IjgiPk5vIEltYWdlPC90ZXh0Pgo8L3N2Zz4=";
+                            "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOTYiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA5NiA2NCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9Ijk2IiBoZWlnaHQ9IjY0IiBmaWxsPSIjMzc0MTUxIi8+CjxjaXJjbGUgY3g9IjQ4IiBjeT0iMzIiIHI9IjEyIiBmaWxsPSIjNjM3NDhEIi8+Cjx0ZXh0IHg9IjQ4IiB5PSI1MCIgZmlsbD0iIzlDQTNBRiIgZm9udC1mYW1pbHk9IkFyaWFsIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9IjgiPk5vIEltYWdlPC90ZXh0Pgo8L3N2Zz4=";
                         }}
                       />
                     )}

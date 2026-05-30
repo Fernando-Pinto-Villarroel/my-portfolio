@@ -88,11 +88,14 @@ const ProjectCard = ({ project }) => {
                 autoPlay
                 loop
                 playsInline
+                preload="none"
               />
             ) : (
               <img
                 src={`${import.meta.env.BASE_URL}${project.image}`}
                 alt={project.title}
+                loading="lazy"
+                decoding="async"
                 className="object-contain w-full h-full"
               />
             )}
