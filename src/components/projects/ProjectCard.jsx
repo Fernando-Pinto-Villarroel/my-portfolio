@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef, useLayoutEffect } from "react";
 import { Github, Star, ExternalLink, FileText, Users, GraduationCap } from "lucide-react";
 import ProjectModal from "./ProjectModal";
 
@@ -25,6 +25,25 @@ const getCategoryStyle = (category) => {
 const ProjectCard = ({ project }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalType, setModalType] = useState("");
+  const techContainerRef = useRef(null);
+  const [techVisibleCount, setTechVisibleCount] = useState(project.technologies.length);
+
+  useLayoutEffect(() => {
+    const container = techContainerRef.current;
+    if (!container) return;
+    const containerBottom = container.getBoundingClientRect().bottom;
+    const children = Array.from(container.children);
+    let firstOverflow = children.length;
+    for (let i = 0; i < children.length; i++) {
+      if (children[i].getBoundingClientRect().bottom > containerBottom + 1) {
+        firstOverflow = i;
+        break;
+      }
+    }
+    if (firstOverflow < children.length) {
+      setTechVisibleCount(Math.max(1, firstOverflow - 1));
+    }
+  }, [project.id]);
 
   const openModal = (type) => {
     setModalType(type);
@@ -130,8 +149,8 @@ const ProjectCard = ({ project }) => {
             {project.description}
           </p>
 
-          <div className="flex flex-wrap gap-2 mb-4 flex-shrink-0 min-h-[65px] max-h-[65px] overflow-hidden">
-            {project.technologies.map((tech, index) => (
+          <div ref={techContainerRef} className="flex flex-wrap gap-2 mb-4 flex-shrink-0 min-h-[65px] max-h-[65px] overflow-hidden">
+            {project.technologies.slice(0, techVisibleCount).map((tech, index) => (
               <span
                 key={index}
                 className="px-3 py-1 bg-gray-700/50 text-gray-300 text-xs rounded-full border border-gray-600/50 h-fit"
@@ -139,6 +158,11 @@ const ProjectCard = ({ project }) => {
                 {tech}
               </span>
             ))}
+            {techVisibleCount < project.technologies.length && (
+              <span className="px-3 py-1 bg-blue-700/40 text-blue-300 text-xs rounded-full border border-blue-500/40 h-fit font-medium">
+                +{project.technologies.length - techVisibleCount}
+              </span>
+            )}
           </div>
 
           <div className="space-y-2 mb-6 flex-1 min-h-[72px] max-h-[72px] overflow-hidden">
